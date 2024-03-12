@@ -9,42 +9,193 @@
       src="https://kit.fontawesome.com/a815c0bcee.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <!-- PARTIE LOGO -->
     <header>
-      <img
-        src="/assets/images/logo/ohmyfood@2x.svg"
-        alt="Logo Ohmyfood"
-        width="60"
-      />
-    </header>
-    <main>
-      <div id="box">
-        <h1>Ohmyfood</h1>
-        <p>
-          <span>Nunc velit</span>. Nullam elit sapien, eleifend eu, commodo nec,
-          semper sit amet, elit. Nulla lectus risus, condimentum ut, laoreet
-          eget, viverra nec, odio. Proin lobortis. Curabitur dictum arcu vel
-          wisi. Cras id nulla venenatis tortor congue ultrices. Pellentesque
-          eget pede. Sed eleifend sagittis elit. Nam sed tellus sit amet lectus
-          ullamcorper tristique. Mauris enim sem, tristique eu, accumsan at,
-          scelerisque vulputate, neque. Quisque lacus. Donec et ipsum sit amet
-          elit nonummy aliquet. Sed viverra nisl at sem. Nam diam. Mauris ut
-          dolor. Curabitur ornare tortor cursus velit.
-        </p>
-        <p>
-          <span>Nunc velit</span>. Nullam elit sapien, eleifend eu, commodo nec,
-          semper sit amet, elit. Nulla lectus risus, condimentum ut, laoreet
-          eget, viverra nec, odio. Proin lobortis. Curabitur dictum arcu vel
-          wisi. Cras id nulla venenatis tortor congue ultrices. Pellentesque
-          eget pede. Sed eleifend sagittis elit. Nam sed tellus sit amet lectus
-          ullamcorper tristique. Mauris enim sem, tristique eu, accumsan at,
-          scelerisque vulputate, neque. Quisque lacus. Donec et ipsum sit amet
-          elit nonummy aliquet. Sed viverra nisl at sem. Nam diam. Mauris ut
-          dolor. Curabitur ornare tortor cursus velit.
-        </p>
+      <div class="logo-container">
+        <a href="index.html">
+          <img
+            class="logo"
+            src="/assets/images/logo/ohmyfood@2x.svg"
+            alt="Logo Ohmyfood"
+            title="Logo Ohmyfood"
+          />
+        </a>
       </div>
+    </header>
+    <main class="main-container">
+      <!-- PARTIE LOCALISATION -->
+      <div class="localisation">
+        <form method="get" aria-label="Formulaire de recherche de localisation">
+          <i class="fa-solid fa-location-dot"></i>
+          <input
+            class="search"
+            type="text"
+            name="localisation"
+            value="Paris, Belleville"
+            placeholder="Paris"
+            aria-label="Entrez votre localisation"
+          />
+        </form>
+      </div>
+      <!-- PARTIE EXPLORATION RESTAURANTS -->
+      <section class="exploration">
+        <div class="exploration-title">
+          <h1>Réservez le menu qui vous convient</h1>
+        </div>
+        <div class="exploration-text">
+          <p>
+            Découvrez des restaurants d'exception, sélectionnés par nos soins.
+          </p>
+        </div>
+        <div class="exploration-button">
+          <button>Explorer nos restaurants</button>
+        </div>
+      </section>
+      <!-- PARTIE FONCTIONNEMENT -->
+      <section class="fonctionnement">
+        <div class="fonctionnement-title">
+          <h2>Fonctionnement</h2>
+        </div>
+        <div class="fonctionnement-list">
+          <!-- ol pour liste ordonnée -->
+          <ol>
+            <li>
+              <i class="fa-solid fa-mobile-screen-button"></i
+              ><span>Choisissez un restaurant</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-list"></i>
+              <span>Composez votre menu</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-store"></i
+              ><span>Dégustez au restaurant</span>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <!-- PARTIE RESTAURANTS -->
+      <section class="restaurants">
+        <div class="restaurants-title">
+          <h2>Restaurants</h2>
+        </div>
+        <div class="restaurants-cards">
+          <!-- RESTAURANT 1 -->
+          <article class="card">
+            <a href="#">
+              <img
+                src="assets/images/restaurants/la-palette-du-gout.jpg"
+                alt="Restaurant La Palette du goût"
+                title="Restaurant La Palette du goût"
+              />
+            </a>
+            <div class="card-new">Nouveau</div>
+            <div class="card-content">
+              <div class="card-txt">
+                <h3 class="card-title">La palette du goût</h3>
+                <p class="card-subtitle">Ménilmontant</p>
+              </div>
+            </div>
+            <div class="card-heart">
+              <input type="checkbox" />
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </article>
+          <!-- RESTAURANT 2 -->
+          <article class="card">
+            <a href="#">
+              <img
+                src="assets/images/restaurants/la-note-enchantee.jpg"
+                alt="Restaurant La note enchantée"
+                title="Restaurant La note enchantée"
+              />
+            </a>
+            <div class="card-new">Nouveau</div>
+            <div class="card-content">
+              <div class="card-txt">
+                <h3 class="card-title">La note enchantée</h3>
+                <p class="card-subtitle">Charonne</p>
+              </div>
+            </div>
+            <div class="card-heart">
+              <input type="checkbox" />
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </article>
+          <!-- RESTAURANT 3 -->
+          <article class="card">
+            <a href="#">
+              <img
+                src="assets/images/restaurants/a-la-francaise.jpg"
+                alt="Restaurant À la française"
+                title="Restaurant À la française"
+              />
+            </a>
+            <div class="card-content">
+              <div class="card-txt">
+                <h3 class="card-title">À la française</h3>
+                <p class="card-subtitle">Cité Rouge</p>
+              </div>
+            </div>
+            <div class="card-heart">
+              <input type="checkbox" />
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </article>
+          <!-- RESTAURANT 4 -->
+          <article class="card">
+            <a href="#">
+              <img
+                src="assets/images/restaurants/le-delice-des-sens.jpg"
+                alt="Restaurant Le délice des sens"
+                title="Restaurant Le délice des sens"
+              />
+            </a>
+            <div class="card-content">
+              <div class="card-txt">
+                <h3 class="card-title">Le délice des sens</h3>
+                <p class="card-subtitle">Folie-Méricourt</p>
+              </div>
+            </div>
+            <div class="card-heart">
+              <input type="checkbox" />
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <!-- PARTIE PIED DE PAGE-->
+    <footer class="footer-container">
+      <div id="footer-title">
+        <span class="footer-title-font"> Ohmyfood </span>
+      </div>
+      <div class="footer-menu">
+        <ul>
+          <li>
+            <i class="fa-solid fa-utensils"></i>
+            <a href="#">Proposer un restaurant</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-handshake-angle"></i>
+            <a href="#">Devenir partenaire</a>
+          </li>
+          <li>
+            <a href="#">Mentions légales</a>
+          </li>
+          <li>
+            <a href="mailto:contact@ohmyfood.com">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
