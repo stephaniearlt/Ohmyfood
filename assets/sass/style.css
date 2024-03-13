@@ -1,14 +1,8 @@
-/****** General ******/
-/* Appliquer la police par défaut à tous les éléments */
 * {
-  font-family: "Roboto", sans-serif; /* Utilisation de Roboto comme police par défaut */
+  font-family: "Roboto", sans-serif;
 }
 
-/* Variables de couleur */
 :root {
-  --primary-color: #9356dc;
-  --secondary-color: #ff79da;
-  --tertiary-color: #99e2d0;
   --font-size: 16px;
 }
 
@@ -29,43 +23,48 @@ li {
 .section-title {
   font-size: 1.5em;
   font-weight: 700;
+  margin-bottom: 25px;
 }
 
 .card {
   background-color: white;
+  border-radius: 15px;
+  margin-top: 20px;
+  margin-bottom: 26px;
+  box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.12);
 }
-
 .card img {
-  object-fit: cover;
-  /* Pour corriger l'image qui se déforme */
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 15px 15px 0px 0px;
   width: 100%;
   height: 170px;
+  position: relative;
 }
-
-.card-title {
+.card .card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 20px 15px 13px;
+}
+.card .card-title {
   font-size: 1.125em;
   font-weight: 700;
 }
-
-.card-subtitle {
+.card .card-subtitle {
   font-size: 1.0625em;
   font-weight: 300;
 }
-
-/****** PARTIE HEADER / LOGO ******/
 
 .header {
   display: flex;
   flex-direction: column;
 }
-
-.logo-container {
+.header .logo-container {
   margin-left: auto;
   margin-right: auto;
 }
-
-.logo {
+.header .logo-container .logo {
   width: 45%;
   display: flex;
   margin-left: auto;
@@ -73,8 +72,6 @@ li {
   margin-top: 20px;
   margin-bottom: 15px;
 }
-
-/****** PARTIE LOCALISATION ******/
 
 .localisation {
   display: flex;
@@ -84,21 +81,17 @@ li {
   padding: 20px;
   width: 100%;
 }
-
-.fa-location-dot {
+.localisation .fa-location-dot {
   font-size: 16px;
   color: #353535;
   margin-left: 30px;
 }
-
-.search {
+.localisation .search {
   background: none;
   border: none;
   font-weight: 500;
   font-size: 1em;
 }
-
-/****** PARTIE EXPLORATION RESTAURANTS ******/
 
 .exploration {
   display: flex;
@@ -109,25 +102,20 @@ li {
   text-align: center;
   padding: 40px 0 20px;
 }
-
 .exploration > div {
   margin-bottom: 20px;
 }
 
-/****** PARTIE FONCTIONNEMENT  ******/
-
-/****** PARTIE RESTAURANTS ******/
+.fonctionnement {
+  padding: 40px 20px 40px 20px;
+}
 
 .restaurants {
   background-color: #f6f6f6;
-  padding: 50px 20px 40px 20px;
+  padding: 40px 20px 40px 20px;
 }
-
-/****** PARTIE FOOTER ******/
 
 .footer-container {
   background-color: #353535;
   color: white;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
