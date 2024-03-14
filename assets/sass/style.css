@@ -1,5 +1,6 @@
 * {
   font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
 
 :root {
@@ -8,7 +9,6 @@
 
 body {
   min-width: 320px;
-  width: 100%;
 }
 
 a {
@@ -35,7 +35,7 @@ li {
 }
 .card img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 15px 15px 0px 0px;
   width: 100%;
   height: 170px;
@@ -47,11 +47,11 @@ li {
   align-items: center;
   padding: 18px 20px 15px 13px;
 }
-.card .card-title {
+.card .card-content .card-title {
   font-size: 1.125em;
   font-weight: 700;
 }
-.card .card-subtitle {
+.card .card-content .card-subtitle {
   font-size: 1.0625em;
   font-weight: 300;
 }
@@ -80,11 +80,13 @@ li {
   background-color: #e6e6e7;
   padding: 20px;
   width: 100%;
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
 }
 .localisation .fa-location-dot {
   font-size: 16px;
   color: #353535;
-  margin-left: 30px;
+  margin-left: 70px;
 }
 .localisation .search {
   background: none;
@@ -100,14 +102,39 @@ li {
   background-color: #f6f6f6;
   width: 100%;
   text-align: center;
-  padding: 40px 0 20px;
+  padding: 40px 20px 20px;
 }
 .exploration > div {
   margin-bottom: 20px;
 }
+.exploration .exploration-button {
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  width: 220px;
+  height: 50px;
+  padding: 10px;
+  background: linear-gradient(356deg, #9356dc 0%, #ff79da 100%);
+  box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.12);
+}
 
 .fonctionnement {
   padding: 40px 20px 40px 20px;
+}
+.fonctionnement .fonctionnement-list ol li {
+  background: #f6f6f6;
+  border-radius: 25px;
+  height: 80px;
+  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-left: 37px;
+  box-shadow: 1px 4px 9px 1px rgba(0, 0, 0, 0.1);
+  position: relative;
+  cursor: pointer;
+}
+.fonctionnement .fonctionnement-list i {
+  margin-right: 20px;
 }
 
 .restaurants {
@@ -118,4 +145,20 @@ li {
 .footer-container {
   background-color: #353535;
   color: white;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+}
+.footer-container .footer-title-font {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.125em;
+}
+.footer-container .footer-menu li {
+  margin-bottom: 10px;
+}
+.footer-container .footer-menu .footer-menu-item {
+  margin-right: 10px;
+}
+.footer-container .footer-menu .footer-menu-item1 {
+  margin-right: 4px;
 }/*# sourceMappingURL=style.css.map */
