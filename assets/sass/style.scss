@@ -1,8 +1,8 @@
 // Importer mixins
-@import "partials/mixins";
+@import "/assets/sass/partials/mixins";
 
 // Importer variables
-@import "partials/variable";
+@import "/assets/sass/partials/variables";
 
 // Global styles
 * {
@@ -102,23 +102,51 @@ li {
 }
 
 .fonctionnement {
-  padding: 40px 20px 40px 20px;
+  padding: 40px 20px;
 
-  .fonctionnement-list {
-    ol li {
+  .fonctionnement-steps {
+    .step {
       background: #f6f6f6;
       border-radius: 25px;
       height: 80px;
       margin-bottom: 30px;
       padding-top: 30px;
-      padding-left: 37px;
+      padding-left: 100px; // Ajout d'espace pour le chiffre et l'icône
       box-shadow: 1px 4px 9px 1px rgba(0, 0, 0, 0.1);
-      position: relative;
-      cursor: pointer;
-    }
+      position: relative; // Définir la position relative pour les éléments internes
 
-    i {
-      margin-right: 20px;
+      .step-number {
+        color: #fff;
+        font-weight: 500;
+        font-size: 0.875em;
+        position: absolute;
+        left: -10px; // Décalage vers la gauche
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #9356dc; // Couleur de fond
+        border-radius: 50%; // Rendre le chiffre rond
+        width: 25px; // Largeur du cercle
+        height: 25px; // Hauteur du cercle
+        display: flex; // Utilisation de flexbox pour aligner le chiffre au centre
+        justify-content: center; // Centrer horizontalement
+        align-items: center; // Centrer verticalement
+      }
+
+      .step-icon {
+        color: #9356dc;
+        font-size: 1.5em;
+        margin-right: 20px;
+        position: absolute;
+        left: 40px; // Positionner l'icône
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .step-description {
+        line-height: 1.5;
+        position: relative; // Définir la position
+        left: 90px; // Ajuster la distance entre l'icône et la description
+      }
     }
   }
 }

@@ -1,8 +1,14 @@
+/* Importer mixins */
+@import "/assets/sass/partials/mixins";
+
+/* Importer variables */
+@import "/assets/sass/partials/variables";
+
+/* Global styles */
 * {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
-
 :root {
   --font-size: 16px;
 }
@@ -30,10 +36,12 @@ li {
   display: flex;
   flex-direction: column;
 }
+
 .header .logo-container {
   margin-left: auto;
   margin-right: auto;
 }
+
 .header .logo-container .logo {
   width: 45%;
   display: flex;
@@ -53,11 +61,13 @@ li {
   position: relative;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
 }
+
 .localisation .fa-location-dot {
   font-size: 16px;
   color: #353535;
   margin-left: 70px;
 }
+
 .localisation .search {
   background: none;
   border: none;
@@ -74,9 +84,11 @@ li {
   text-align: center;
   padding: 40px 20px 20px;
 }
+
 .exploration > div {
   margin-bottom: 20px;
 }
+
 .exploration .exploration-button {
   font-size: 16px;
   color: white;
@@ -90,21 +102,51 @@ li {
 }
 
 .fonctionnement {
-  padding: 40px 20px 40px 20px;
+  padding: 40px 20px;
 }
-.fonctionnement .fonctionnement-list ol li {
+
+.fonctionnement-steps .step {
   background: #f6f6f6;
   border-radius: 25px;
   height: 80px;
   margin-bottom: 30px;
   padding-top: 30px;
-  padding-left: 37px;
+  padding-left: 100px; /* Ajout d'espace pour le chiffre et l'icône */
   box-shadow: 1px 4px 9px 1px rgba(0, 0, 0, 0.1);
-  position: relative;
-  cursor: pointer;
+  position: relative; /* Définir la position relative pour les éléments internes */
 }
-.fonctionnement .fonctionnement-list i {
+
+.fonctionnement-steps .step .step-number {
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.875em;
+  position: absolute;
+  left: -10px; /* Décalage vers la gauche */
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #9356dc; /* Couleur de fond */
+  border-radius: 50%; /* Rendre le chiffre rond */
+  width: 25px; /* Largeur du cercle */
+  height: 25px; /* Hauteur du cercle */
+  display: flex; /* Utilisation de flexbox pour aligner le chiffre au centre */
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; /* Centrer verticalement */
+}
+
+.fonctionnement-steps .step .step-icon {
+  color: #9356dc;
+  font-size: 1.5em;
   margin-right: 20px;
+  position: absolute;
+  left: 40px; /* Positionner l'icône */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.fonctionnement-steps .step .step-description {
+  line-height: 1.5;
+  position: relative; /* Définir la position */
+  left: -20px;
 }
 
 .restaurants {
@@ -119,6 +161,7 @@ li {
   margin-bottom: 26px;
   box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.12);
 }
+
 .card img {
   -o-object-fit: cover;
   object-fit: cover;
@@ -127,6 +170,7 @@ li {
   height: 170px;
   position: relative;
 }
+
 .card .card-content {
   display: flex;
   flex-direction: column;
@@ -134,20 +178,24 @@ li {
   align-items: flex-start;
   padding: 15px;
 }
+
 .card .card-content .card-txt {
   display: flex;
   align-items: center;
   width: 100%;
 }
+
 .card .card-content .card-txt .title-subtitle {
   flex: 1;
   margin-right: 10px;
 }
+
 .card .card-content .card-txt .card-title {
   font-size: 1.125em;
   font-weight: 700;
   padding-bottom: 5px;
 }
+
 .card .card-content .card-txt .card-subtitle {
   font-size: 1.0625em;
   font-weight: 300;
@@ -160,19 +208,24 @@ li {
   padding-left: 30px;
   padding-bottom: 20px;
 }
-.footer-container #footer-title {
+
+#footer-title {
   margin-bottom: 20px;
 }
-.footer-container .footer-title-font {
+
+.footer-title-font {
   font-family: "Shrikhand", cursive;
   font-size: 1.125em;
 }
-.footer-container .footer-menu li {
+
+.footer-menu li {
   margin-bottom: 10px;
 }
-.footer-container .footer-menu .footer-menu-item {
+
+.footer-menu .footer-menu-item {
   margin-right: 10px;
 }
-.footer-container .footer-menu .footer-menu-item1 {
+
+.footer-menu .footer-menu-item1 {
   margin-right: 4px;
-}/*# sourceMappingURL=style.css.map */
+}
