@@ -5,6 +5,8 @@
 }
 
 @import "variables";
+@import "footer-variables";
+@import "footer";
 
 body {
   min-width: 320px;
@@ -90,7 +92,7 @@ li {
   width: 220px;
   height: 50px;
   padding: 10px;
-  background: linear-gradient(356deg, #9356dc 0%, #ff79da 100%);
+  background: linear-gradient(356deg, $primary-color 0%, $secondary-color 100%);
   box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.12);
 }
 
@@ -116,7 +118,7 @@ li {
     left: -10px; /* Décalage vers la gauche */
     top: 50%;
     transform: translateY(-50%);
-    background-color: #9356dc; /* Couleur de fond */
+    background-color: $primary-color; /* Couleur de fond */
     border-radius: 50%; /* Rendre le chiffre rond */
     width: 25px; /* Largeur du cercle */
     height: 25px; /* Hauteur du cercle */
@@ -126,7 +128,7 @@ li {
   }
 
   .step-icon {
-    color: #9356dc;
+    color: $primary-color;
     font-size: 1.5em;
     margin-right: 20px;
     position: absolute;
@@ -202,35 +204,6 @@ li {
             font-weight: 300;
           }
         }
-      }
-    }
-  }
-}
-
-.footer-container {
-  background-color: #353535;
-  color: white;
-  padding-top: 20px;
-  padding-left: 30px;
-  padding-bottom: 20px;
-
-  #footer-title {
-    margin-bottom: 20px;
-  }
-
-  .footer-title-font {
-    font-family: "Shrikhand", cursive;
-    font-size: 1.125em;
-  }
-
-  .footer-menu li {
-    margin-bottom: 10px;
-
-    .footer-menu-item {
-      margin-right: 10px;
-
-      &.footer-menu-item1 {
-        margin-right: 4px;
       }
     }
   }
