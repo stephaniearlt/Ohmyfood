@@ -1,0 +1,210 @@
+/* Global styles */
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+@import "variables";
+@import "footer-variables";
+@import "footer";
+
+body {
+  min-width: 320px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+.section-title {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header .logo-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header .logo-container .logo {
+  width: 45%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e6e6e7;
+  padding: 20px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.localisation .fa-location-dot {
+  font-size: 16px;
+  color: #353535;
+  margin-left: 70px;
+}
+
+.localisation .search {
+  background: none;
+  border: none;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.exploration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f6f6f6;
+  width: 100%;
+  text-align: center;
+  padding: 40px 20px 20px;
+}
+
+.exploration > div {
+  margin-bottom: 20px;
+}
+
+.exploration .exploration-button {
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  width: 220px;
+  height: 50px;
+  padding: 10px;
+  background: linear-gradient(356deg, $primary-color 0%, $secondary-color 100%);
+  box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.12);
+}
+
+.fonctionnement {
+  padding: 40px 20px;
+}
+
+.fonctionnement-steps .step {
+  background: #f6f6f6;
+  border-radius: 25px;
+  height: 80px;
+  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-left: 100px; /* Ajout d'espace pour le chiffre et l'icône */
+  box-shadow: 1px 4px 9px 1px rgba(0, 0, 0, 0.1);
+  position: relative; /* Définir la position relative pour les éléments internes */
+
+  .step-number {
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.875em;
+    position: absolute;
+    left: -10px; /* Décalage vers la gauche */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $primary-color; /* Couleur de fond */
+    border-radius: 50%; /* Rendre le chiffre rond */
+    width: 25px; /* Largeur du cercle */
+    height: 25px; /* Hauteur du cercle */
+    display: flex; /* Utilisation de flexbox pour aligner le chiffre au centre */
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+  }
+
+  .step-icon {
+    color: $primary-color;
+    font-size: 1.5em;
+    margin-right: 20px;
+    position: absolute;
+    left: 40px; /* Positionner l'icône */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .step-description {
+    line-height: 1.5;
+    position: relative; /* Définir la position */
+    left: -20px;
+  }
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+  padding: 40px 20px 40px 20px;
+
+  .card {
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.12);
+    position: relative; /* Ajout de position relative pour définir le contexte de positionnement */
+    display: block; /* Rendre l'élément "a" un élément de bloc pour envelopper toute la carte */
+
+    img {
+      object-fit: cover;
+      border-radius: 15px 15px 0px 0px;
+      width: 100%;
+      height: 150px;
+      position: relative;
+    }
+
+    /* Ajout de styles pour l'indicateur "Nouveau" */
+    .card-new {
+      background-color: rgba(153, 226, 208, 1); /* Couleur de fond */
+      color: rgba(0, 135, 102, 1); /* Couleur du texte */
+      padding: 5px 10px; /* Espacement interne */
+      border-radius: 5px; /* Coins arrondis */
+      position: absolute; /* Position absolue */
+      top: 10px; /* Ajustement de la position verticale */
+      right: 10px; /* Ajustement de la position horizontale */
+      z-index: 1; /* Pour placer au-dessus de l'image */
+    }
+
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 15px;
+
+      .card-txt {
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        .title-subtitle {
+          flex: 1;
+          margin-right: 10px;
+
+          .card-title {
+            font-size: 1.125em;
+            font-weight: 700;
+            padding-bottom: 5px;
+          }
+
+          .card-subtitle {
+            font-size: 1.0625em;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+}
