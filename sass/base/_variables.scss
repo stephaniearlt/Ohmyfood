@@ -1,0 +1,13 @@
+// Variables de couleur
+$primary-color: #9356dc;
+$secondary-color: #ff79da;
+$tertiary-color: #99e2d0;
+
+// Variables de typographie
+$body-font: 'Roboto', sans-serif; // Police de texte par défaut
+$heading-font: 'Shrikhand', cursive; // Police de titres et de logo
+$base-font-size: 16px; // Taille de la police de base
+
+:root {
+  --font-size: $base-font-size; // Variable CSS personnalisée
+}

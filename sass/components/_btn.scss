@@ -1,0 +1,15 @@
+.btn {
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  width: 220px;
+  height: 50px;
+  padding: 10px;
+  box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.12);
+  background: linear-gradient(356deg, $primary-color 0%, $secondary-color 100%);
+  display: block;
+  /* Ajout de cette propriété */
+  margin: 0 auto;
+  /* Ajout de cette propriété pour centrer horizontalement */
+}
