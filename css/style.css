@@ -76,9 +76,13 @@
   box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.12);
   background: linear-gradient(356deg, #9356dc 0%, #ff79da 100%);
   display: block;
-  /* Ajout de cette propriété */
   margin: 0 auto;
-  /* Ajout de cette propriété pour centrer horizontalement */
+  /* Style au survol */
+}
+.btn:hover {
+  background: linear-gradient(200.64deg, #ae80e5 -5.2%, #fface8 110.74%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); /* Ombre portée légèrement plus visible */
+  cursor: pointer; /* Curseur de type main pour indiquer l'interaction */
 }
 
 .section-title {
@@ -120,8 +124,13 @@
 .home-page .exploration > div {
   margin-bottom: 20px;
 }
+.home-page .exploration .exploration-text p {
+  font-weight: 300;
+  font-size: 1.125em;
+}
 .home-page .fonctionnement {
   padding: 40px 20px;
+  background-color: white;
 }
 .home-page .fonctionnement .fonctionnement-steps .step {
   background: #f6f6f6;
@@ -175,7 +184,6 @@
   box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.12);
   position: relative;
   display: block;
-  /* Ajout de styles pour l'indicateur "Nouveau" */
 }
 .home-page .card img {
   object-fit: cover;
@@ -186,21 +194,13 @@
 }
 .home-page .card .card-new {
   background-color: rgb(153, 226, 208);
-  /* Couleur de fond */
   color: rgb(0, 135, 102);
-  /* Couleur du texte */
   padding: 5px 10px;
-  /* Espacement interne */
-  border-radius: 5px;
-  /* Coins arrondis */
+  border-radius: 2px;
   position: absolute;
-  /* Position absolue */
   top: 10px;
-  /* Ajustement de la position verticale */
   right: 10px;
-  /* Ajustement de la position horizontale */
   z-index: 1;
-  /* Pour placer au-dessus de l'image */
 }
 .home-page .card .card-content {
   display: flex;
@@ -266,7 +266,8 @@ body {
 }
 
 body {
-  min-width: 320px;
+  max-width: 768px;
+  margin: 0 auto;
 }
 
 a {

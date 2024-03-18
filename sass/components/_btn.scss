@@ -9,7 +9,12 @@
   box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.12);
   background: linear-gradient(356deg, $primary-color 0%, $secondary-color 100%);
   display: block;
-  /* Ajout de cette propriété */
   margin: 0 auto;
-  /* Ajout de cette propriété pour centrer horizontalement */
+
+  /* Style au survol */
+  &:hover {
+    background: linear-gradient(200.64deg, lighten($primary-color, 10%) -5.2%, lighten($secondary-color, 10%) 110.74%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); /* Ombre portée légèrement plus visible */
+    cursor: pointer; /* Curseur de type main pour indiquer l'interaction */
+  }
 }
