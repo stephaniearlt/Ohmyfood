@@ -1,0 +1,37 @@
+.heart-checkbox {
+    display: none;
+}
+
+.heart {
+    font-size: 25px;
+    position: relative;
+}
+
+.fa-heart {
+    width: auto;
+}
+
+.heart-full {
+    opacity: 0;
+    transition: opacity 1.5s;
+    position: absolute;
+    top: 30;
+    left: 0;
+    z-index: 1;
+}
+
+.heart-checkbox:checked + .heart .heart-full {
+    opacity: 1;
+    color: transparent;
+    background-image: linear-gradient(#9356dc, #ff79da);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.heart-checkbox:not(:checked) + .heart .heart-full {
+    opacity: 0;
+    color: transparent;
+    background-image: linear-gradient(#9356dc, #ff79da);
+    background-clip: text;
+    -webkit-background-clip: text;
+}

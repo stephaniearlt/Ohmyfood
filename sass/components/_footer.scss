@@ -1,0 +1,28 @@
+.footer-container {
+  background-color: $footer-background-color;
+  color: $footer-text-color;
+  padding: $footer-padding-top $footer-padding-right $footer-padding-bottom $footer-padding-left;
+
+  #footer-title {
+    margin-bottom: 20px;
+    font-family: $footer-title-font;
+    font-size: $footer-title-font-size;
+  }
+
+  .footer-menu li {
+    margin-bottom: 10px;
+
+    .footer-menu-item {
+      margin-right: 5px;
+      font-size: $footer-menu-item-font-size;
+
+      &.footer-menu-item1 {
+        font-size: $footer-menu-item-font-size;
+      }
+    }
+
+    .custom-icon {
+      font-size: $footer-menu-item-font-size;
+    }
+  }
+}

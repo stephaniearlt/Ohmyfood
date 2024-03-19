@@ -1,0 +1,25 @@
+.btn {
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  width: 220px;
+  height: 50px;
+  padding: 10px;
+  box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.12);
+  background: linear-gradient(356deg, $primary-color 0%, $secondary-color 100%);
+  display: block;
+  margin: 0 auto;
+  transition: background 10s, box-shadow 3s; // Ajout de la transition sur les propriétés à modifier
+
+  // Style par défaut
+  background: linear-gradient(356deg, $primary-color 0%, $secondary-color 100%);
+  box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.12);
+
+  // Applique le style au survol
+  &:hover {
+    background: linear-gradient(200.64deg, lighten($primary-color, 10%) -5.2%, lighten($secondary-color, 10%) 110.74%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+}

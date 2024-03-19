@@ -1,0 +1,322 @@
+@charset "UTF-8";
+:root {
+  --font-size: $base-font-size;
+}
+
+.footer-container {
+  background-color: #353535;
+  color: white;
+  padding: 20px 30px 20px 30px;
+}
+.footer-container #footer-title {
+  margin-bottom: 20px;
+  font-family: "Shrikhand", cursive;
+  font-size: 1.125em;
+}
+.footer-container .footer-menu li {
+  margin-bottom: 10px;
+}
+.footer-container .footer-menu li .footer-menu-item {
+  margin-right: 5px;
+  font-size: 0.8125em;
+}
+.footer-container .footer-menu li .footer-menu-item.footer-menu-item1 {
+  font-size: 0.8125em;
+}
+.footer-container .footer-menu li .custom-icon {
+  font-size: 0.8125em;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+.header .logo-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+.header .logo-container .logo {
+  width: 45%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.header-page-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px 10px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 65%;
+  /* ou la taille désirée */
+  margin-right: 10px;
+  /* espace entre le logo et l'icône de retour */
+}
+
+.btn {
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  width: 220px;
+  height: 50px;
+  padding: 10px;
+  box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.12);
+  background: linear-gradient(356deg, #9356dc 0%, #ff79da 100%);
+  display: block;
+  margin: 0 auto;
+  transition: background 10s, box-shadow 3s;
+  background: linear-gradient(356deg, #9356dc 0%, #ff79da 100%);
+  box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.12);
+}
+.btn:hover {
+  background: linear-gradient(200.64deg, #ae80e5 -5.2%, #fface8 110.74%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.heart-checkbox {
+  display: none;
+}
+
+.heart {
+  font-size: 25px;
+  position: relative;
+}
+
+.fa-heart {
+  width: auto;
+}
+
+.heart-full {
+  opacity: 0;
+  transition: opacity 1.5s;
+  position: absolute;
+  top: 30;
+  left: 0;
+  z-index: 1;
+}
+
+.heart-checkbox:checked + .heart .heart-full {
+  opacity: 1;
+  color: transparent;
+  background-image: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.heart-checkbox:not(:checked) + .heart .heart-full {
+  opacity: 0;
+  color: transparent;
+  background-image: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.section-title {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.home-page .localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e6e6e7;
+  padding: 20px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+.home-page .localisation .fa-location-dot {
+  font-size: 16px;
+  color: #353535;
+  margin-left: 70px;
+}
+.home-page .localisation .search {
+  background: none;
+  border: none;
+  font-weight: 500;
+  font-size: 1em;
+}
+.home-page .exploration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f6f6f6;
+  width: 100%;
+  text-align: center;
+  padding: 40px 20px 20px;
+}
+.home-page .exploration > div {
+  margin-bottom: 20px;
+}
+.home-page .exploration .exploration-text p {
+  font-weight: 300;
+  font-size: 1.125em;
+}
+.home-page .fonctionnement {
+  padding: 40px 20px;
+  background-color: white;
+}
+.home-page .fonctionnement .fonctionnement-steps .step {
+  background: #f6f6f6;
+  border-radius: 25px;
+  height: 80px;
+  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-left: 100px;
+  box-shadow: 1px 4px 9px 1px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.home-page .fonctionnement .fonctionnement-steps .step .step-number {
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.875em;
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #9356dc;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-page .fonctionnement .fonctionnement-steps .step .step-icon {
+  color: #9356dc;
+  font-size: 1.5em;
+  margin-right: 20px;
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.home-page .fonctionnement .fonctionnement-steps .step .step-description {
+  line-height: 1.5;
+  position: relative;
+  left: -20px;
+}
+.home-page .restaurants {
+  background-color: #f6f6f6;
+  padding: 40px 20px 40px 20px;
+}
+.home-page .card {
+  position: relative;
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.12);
+  position: relative;
+  display: block;
+}
+.home-page .card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+  width: 100%;
+  height: 150px;
+  position: relative;
+}
+.home-page .card .card-new {
+  background-color: rgb(153, 226, 208);
+  color: rgb(0, 135, 102);
+  padding: 5px 10px;
+  border-radius: 2px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+}
+.home-page .card .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 15px;
+}
+.home-page .card .card-content .card-txt {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.home-page .card .card-content .card-txt .title-subtitle {
+  flex: 1;
+  margin-right: 10px;
+}
+.home-page .card .card-content .card-txt .title-subtitle .card-title {
+  font-size: 1.125em;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+.home-page .card .card-content .card-txt .title-subtitle .card-subtitle {
+  font-size: 1.0625em;
+  font-weight: 300;
+}
+
+body {
+  background-color: rgb(246, 246, 246);
+}
+
+.image-restaurant {
+  width: 100%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.menu-restaurant {
+  background-color: rgb(246, 246, 246);
+  padding: 20px;
+  position: relative;
+  top: -75px;
+  z-index: 1;
+  border-radius: 40px 40px 0 0;
+}
+
+.title-restaurant {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.75em;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.order-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}/*# sourceMappingURL=style.css.map */
