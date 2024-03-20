@@ -1,3 +1,10 @@
+.heart-container {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+}
+
+
 .heart-checkbox {
     display: none;
 }
@@ -15,12 +22,13 @@
     opacity: 0;
     transition: opacity 1.5s;
     position: absolute;
-    top: 30;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 1;
 }
 
-.heart-checkbox:checked + .heart .heart-full {
+.heart-checkbox:checked+.heart .heart-full {
     opacity: 1;
     color: transparent;
     background-image: linear-gradient(#9356dc, #ff79da);
@@ -28,7 +36,7 @@
     -webkit-background-clip: text;
 }
 
-.heart-checkbox:not(:checked) + .heart .heart-full {
+.heart-checkbox:not(:checked)+.heart .heart-full {
     opacity: 0;
     color: transparent;
     background-image: linear-gradient(#9356dc, #ff79da);

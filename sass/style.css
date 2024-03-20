@@ -1,6 +1,6 @@
 @charset "UTF-8";
 :root {
-  --font-size: $base-font-size;
+  --font-size: 1em;
 }
 
 .footer-container {
@@ -77,14 +77,18 @@
   background: linear-gradient(356deg, #9356dc 0%, #ff79da 100%);
   display: block;
   margin: 0 auto;
-  transition: background 10s, box-shadow 3s;
-  background: linear-gradient(356deg, #9356dc 0%, #ff79da 100%);
-  box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.12);
+  transition: background 1.5s, box-shadow 1.5s;
 }
 .btn:hover {
-  background: linear-gradient(200.64deg, #ae80e5 -5.2%, #fface8 110.74%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
-  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(356deg, #a16be0, #ff93e1), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
   cursor: pointer;
+}
+
+.heart-container {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
 }
 
 .heart-checkbox {
@@ -104,8 +108,9 @@
   opacity: 0;
   transition: opacity 1.5s;
   position: absolute;
-  top: 30;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 1;
 }
 
@@ -270,6 +275,52 @@
   font-weight: 300;
 }
 
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Fond blanc transparent */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  /* Assure que le loader est au-dessus de tout le contenu */
+  animation: fadeOut 2s 1s forwards;
+  /* Animation de fondu après 2 secondes */
+}
+
+.loader-overlay .fa-utensils {
+  font-size: 120px;
+  /* Taille de l'icône de fourchette et couteau */
+  color: #9356dc;
+  /* Couleur principale */
+  animation: spin 2s linear infinite;
+  /* Animation de rotation */
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    /* Opacité maximale */
+  }
+  to {
+    opacity: 0;
+    /* Opacité minimale */
+    display: none;
+    /* Disparaît complètement */
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 body {
   background-color: rgb(246, 246, 246);
 }
