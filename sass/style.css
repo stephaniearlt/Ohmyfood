@@ -7,26 +7,53 @@
   background-color: #353535;
   color: white;
   padding: 20px 30px 20px 30px;
+  display: flex;
+  flex-direction: column;
+  /* Affichage en colonne par défaut */
 }
 .footer-container #footer-title {
   margin-bottom: 20px;
   font-family: "Shrikhand", cursive;
   font-size: 1.125em;
 }
+.footer-container .footer-menu ul {
+  padding: 0;
+  list-style: none;
+}
 .footer-container .footer-menu li {
   margin-bottom: 10px;
 }
-.footer-container .footer-menu li .footer-menu-item {
+.footer-container .footer-menu .footer-menu-item,
+.footer-container .footer-menu .custom-icon {
+  margin-right: 10px;
+  font-size: 0.8125em;
+}
+.footer-container .footer-menu .footer-menu-item1 {
   margin-right: 5px;
   font-size: 0.8125em;
 }
-.footer-container .footer-menu li .footer-menu-item.footer-menu-item1 {
-  font-size: 0.8125em;
-}
-.footer-container .footer-menu li .custom-icon {
-  font-size: 0.8125em;
-}
 
+@media screen and (min-width: 1024px) {
+  .footer-container {
+    flex-direction: row-reverse; /* Changement en affichage en ligne avec inversion */
+    align-items: center; /* Alignement vertical des éléments */
+    padding-top: 50px; /* Ajouter un padding en haut de la section */
+    padding-bottom: 10px; /* Ajouter un padding en bas de la section */
+  }
+  #footer-title {
+    margin-bottom: 0; /* Supprime la marge en bas */
+  }
+  .footer-menu ul {
+    display: flex; /* Affichage en ligne des éléments du menu */
+  }
+  .footer-menu ul li {
+    margin-left: 15px; /* Espacement entre les éléments du menu */
+  }
+  /* Créer un écart entre "Contact" et "Ohmyfood" */
+  .footer-menu ul li:last-child {
+    margin-right: 100px; /* Ajoute un espace à droite du dernier élément */
+  }
+}
 .header {
   display: flex;
   flex-direction: column;
@@ -46,23 +73,27 @@
 
 .header-page-menu {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 15px 20px 10px 20px;
   background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-.header-logo {
-  display: flex;
-  align-items: center;
+.header-page-menu .header-return {
+  font-size: 16px;
+  color: #000;
+  transition: color 0.3s;
+  margin-right: auto;
 }
-
-.logo {
-  width: 65%;
-  /* ou la taille désirée */
-  margin-right: 10px;
-  /* espace entre le logo et l'icône de retour */
+.header-page-menu .header-return:hover {
+  color: #99e2d0;
+}
+.header-page-menu .header-logo {
+  flex: 1;
+  text-align: center;
+}
+.header-page-menu .logo {
+  width: 11.25em;
+  display: inline-block;
 }
 
 .btn {
@@ -321,6 +352,68 @@
     transform: rotate(360deg);
   }
 }
+@media screen and (min-width: 1024px) {
+  .home-page h1 {
+    font-size: 1.25em;
+    padding-bottom: 10px;
+  }
+  .home-page .fonctionnement {
+    padding: 40px 60px;
+  }
+  .home-page .fonctionnement-steps {
+    display: flex;
+    justify-content: space-between;
+    /* Espacement égal entre les étapes */
+    width: 100%;
+    /* Largeur totale pour s'adapter au centrage */
+  }
+  .home-page .fonctionnement-steps .step {
+    margin-left: 10px;
+  }
+  .home-page .restaurants {
+    padding: 40px 30px 40px 60px;
+  }
+  .home-page .card {
+    margin-right: 25px;
+    /* Ajouter une marge à droite */
+  }
+  .home-page .restaurants .restaurants-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .home-page h1 {
+    font-size: 1.75em;
+    padding-bottom: 25px;
+  }
+  .home-page p {
+    padding-bottom: 20px;
+  }
+  .home-page .fonctionnement {
+    padding: 40px 200px;
+  }
+  .home-page .fonctionnement-steps {
+    padding: 0 15px;
+  }
+  .home-page .restaurants {
+    padding: 40px 120px 10px 200px;
+  }
+  .fonctionnement-steps .step {
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 40px;
+  }
+  .card {
+    margin-right: 75px;
+    /* Ajouter une marge à droite */
+  }
+  .footer-container {
+    padding-right: 120px;
+    /* Ajouter une marge à droite */
+  }
+}
 body {
   background-color: rgb(246, 246, 246);
 }
@@ -359,7 +452,9 @@ body {
 }
 
 body {
-  max-width: 768px;
+  background-color: white;
+  min-width: 320px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 

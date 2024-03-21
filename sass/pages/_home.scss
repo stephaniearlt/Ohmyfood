@@ -213,3 +213,89 @@
         transform: rotate(360deg);
     }
 }
+
+@media screen and (min-width: $large) {
+
+    .home-page {
+
+        h1 {
+            font-size: 1.25em;
+            padding-bottom: 10px;
+        }
+
+        .fonctionnement {
+            padding: 40px 60px;
+        }
+
+        .fonctionnement-steps {
+            display: flex;
+            justify-content: space-between;
+            /* Espacement égal entre les étapes */
+            width: 100%;
+            /* Largeur totale pour s'adapter au centrage */
+        }
+
+        .fonctionnement-steps .step {
+            margin-left: 10px;
+        }
+
+        .restaurants {
+            padding: 40px 30px 40px 60px;
+        }
+
+        .card {
+            margin-right: 25px;
+            /* Ajouter une marge à droite */
+        }
+
+        .restaurants .restaurants-cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+    }
+}
+
+@media screen and (min-width: $extra-large) {
+
+    .home-page {
+
+        h1 {
+            font-size: 1.75em;
+            padding-bottom: 25px;
+        }
+
+        p {
+            padding-bottom: 20px;
+        }
+
+        .fonctionnement {
+            padding: 40px 200px;
+        }
+
+        .fonctionnement-steps {
+            padding: 0 15px;
+        }
+
+        .restaurants {
+            padding: 40px 120px 10px 200px;
+        }
+    }
+
+
+    .fonctionnement-steps .step {
+        padding-top: 30px;
+        padding-left: 100px;
+        padding-right: 40px;
+    }
+
+    .card {
+        margin-right: 75px;
+        /* Ajouter une marge à droite */
+    }
+
+    .footer-container {
+        padding-right: 120px;
+        /* Ajouter une marge à droite */
+    }
+}

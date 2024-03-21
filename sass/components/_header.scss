@@ -18,25 +18,32 @@
     }
 }
 
-// Styles pour l'en-tête des pages de restaurant
 .header-page-menu {
     // Styles spécifiques pour l'en-tête des pages de restaurant
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: center; // Alignement vertical
     padding: 15px 20px 10px 20px;
     background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
-.header-logo {
-    display: flex;
-    align-items: center;
-}
+    .header-return {
+        font-size: 16px; // Taille de l'icône
+        color: #000; // Couleur par défaut
+        transition: color 0.3s; // Animation de transition
+        margin-right: auto; // Pour aligner l'icône complètement à gauche
 
-.logo {
-    width: 65%;
-    /* ou la taille désirée */
-    margin-right: 10px;
-    /* espace entre le logo et l'icône de retour */
+        &:hover {
+            color: $tertiary-color; // Couleur au survol
+        }
+    }
+
+    .header-logo {
+        flex: 1; // Le logo occupe l'espace restant
+        text-align: center; // Centrage horizontal du logo
+    }
+
+    .logo {
+        width: 11.25em; // Ajustement de la largeur du logo
+        display: inline-block; // Permet d'appliquer text-align: center
+    }
 }

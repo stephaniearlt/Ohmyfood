@@ -1,5 +1,4 @@
 @import "base/variables";
-@import "footer-variables";
 @import "components/footer";
 @import "components/header";
 @import "components/btn";
@@ -13,7 +12,9 @@
 }
 
 body {
-  max-width: 768px;
+  background-color: $background-color;
+  min-width: $small;
+  max-width: $extra-large;
   margin: 0 auto;
 }
 
@@ -25,3 +26,5 @@ a {
 li {
   list-style-type: none;
 }
+
+

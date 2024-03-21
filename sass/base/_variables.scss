@@ -2,11 +2,29 @@
 $primary-color: #9356dc;
 $secondary-color: #ff79da;
 $tertiary-color: #99e2d0;
+$background-color: white;
 
 // Variables de typographie
 $body-font: 'Roboto', sans-serif; // Police de texte par défaut
 $heading-font: 'Shrikhand', cursive; // Police de titres et de logo
 
 :root {
-  --font-size: 1em; // Variable CSS personnalisée
+  --font-size: 1em;
 }
+
+// Variables footer
+$footer-background-color: #353535;
+$footer-text-color: white;
+$footer-padding-top: 20px;
+$footer-padding-left: 30px;
+$footer-padding-right: 30px;
+$footer-padding-bottom: 20px;
+$footer-title-font: "Shrikhand", cursive;
+$footer-title-font-size: 1.125em;
+$footer-menu-item-font-size: 0.8125em;
+
+// Variables breakpoints responsives
+$small: 320px;
+$medium: 768px;
+$large: 1024px;
+$extra-large: 1440px;
