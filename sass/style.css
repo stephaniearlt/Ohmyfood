@@ -116,6 +116,10 @@
   cursor: pointer;
 }
 
+.btn-order .btn {
+  margin-bottom: 20px;
+}
+
 .heart-container {
   position: absolute;
   bottom: 25px;
@@ -159,6 +163,12 @@
   background-image: linear-gradient(#9356dc, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
+}
+
+.restaurant-page-heart {
+  position: absolute;
+  top: 0;
+  right: 15px;
 }
 
 .section-title {
@@ -431,6 +441,7 @@ body {
   top: -75px;
   z-index: 1;
   border-radius: 40px 40px 0 0;
+  margin-bottom: -75px;
 }
 
 .title-restaurant {
@@ -438,12 +449,105 @@ body {
   font-size: 1.75em;
   display: flex;
   align-items: center;
+  margin-top: 20px;
   margin-bottom: 20px;
+  position: relative;
 }
 
-.order-cards {
+.menu-card {
+  margin-bottom: 40px;
+}
+
+.menu-card h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.content-menu-card {
+  cursor: pointer;
+  overflow: hidden;
+  height: 70px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 15px;
+  padding-left: 12px;
+  margin-bottom: 15px;
+  box-shadow: 1px 4px 9px 1px rgba(0, 0, 0, 0.1);
+  transition: transform 330ms ease-in-out;
+}
+.content-menu-card .details-menu-card {
+  line-height: 25px;
+  flex-grow: 1;
+  overflow: hidden;
+  /* si nécessaire, texte rogné et ... */
+  text-overflow: ellipsis;
+  /* empêche le retour à la ligne */
+  white-space: nowrap;
+  padding-right: 10px;
+}
+.content-menu-card .title-menu-card {
+  font-weight: 500;
+  font-size: 1.125em;
+  flex-grow: 1;
+  overflow: hidden;
+  /* si nécessaire, texte rogné et ... */
+  text-overflow: ellipsis;
+  /* empêche le retour à la ligne */
+  white-space: nowrap;
+}
+.content-menu-card .txt-menu-card {
+  font-weight: 300;
+  font-size: 0.9375em;
+  flex-grow: 1;
+  overflow: hidden;
+  /* si nécessaire, texte rogné et ... */
+  text-overflow: ellipsis;
+  /* empêche le retour à la ligne */
+  white-space: nowrap;
+}
+.content-menu-card .price-menu-card {
+  font-weight: 700;
+  font-size: 0.9375em;
+  padding-right: 20px;
+  margin-top: 25px;
+}
+
+.check {
+  overflow: hidden;
+  flex-shrink: 0;
+  font-size: 20px;
+  background-color: #99e2d0;
+  color: white;
+  border-radius: 0px 15px 15px 0px;
+  width: 0px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: width 0.8s ease;
+  /* Transition plus lente */
+}
+.check .fa-circle-check {
+  transform: rotate(0deg);
+  /* Rotation initiale */
+  transition: transform 0.8s ease;
+  /* Transition plus lente */
+}
+
+.content-menu-card:hover .check {
+  width: 60px;
+  /* Déplace le bouton vers la gauche au survol */
+}
+.content-menu-card:hover .check .fa-circle-check {
+  transform: rotate(360deg);
+  /* Rotation complète au survol */
 }
 
 * {

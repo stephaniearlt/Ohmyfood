@@ -15,17 +15,117 @@ body {
     top: -75px; // Décale légèrement vers le haut pour chevaucher l'image
     z-index: 1; // Assurez-vous que la section est au-dessus de l'image
     border-radius: 40px 40px 0 0;
+    margin-bottom: -75px; // Réduire le décalage avec le footer
 }
 
 .title-restaurant {
-    font-family: "Shrikhand", cursive;
+    font-family: $heading-font;
     font-size: 1.75em;
     display: flex;
     align-items: center;
+    margin-top: 20px;
     margin-bottom: 20px;
+    position: relative;
 }
 
-.order-cards {
-    display: flex;
-    flex-wrap: wrap;
+.menu-card {
+    margin-bottom: 40px; // Ajoute un espace en bas de chaque article
 }
+
+.menu-card h2 {
+        text-transform: uppercase; // Convertit le texte en majuscules
+        font-weight: 300;
+        border-bottom: 3px solid #99E2D0; // Ajoute la bordure en dessous du texte avec les critères spécifiés
+        width: 40px; // Largeur de la bordure
+        margin-bottom: 10px; // Ajoute une marge en bas pour créer un espace sous le titre
+        padding-bottom: 5px; // Ajoute un espace supplémentaire entre le texte et la bordure
+    }
+
+    .content-menu-card {
+        cursor: pointer;
+        overflow: hidden;
+        height: 70px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        border-radius: 15px;
+        padding-left: 12px;
+        margin-bottom: 15px;
+        box-shadow: 1px 4px 9px 1px rgb(0 0 0 / 10%);
+        transition: transform 330ms ease-in-out;
+
+        .details-menu-card {
+            line-height: 25px;
+            flex-grow: 1;
+            overflow: hidden;
+            /* si nécessaire, texte rogné et ... */
+            text-overflow: ellipsis;
+            /* empêche le retour à la ligne */
+            white-space: nowrap;
+            padding-right: 10px;
+        }
+
+        .title-menu-card {
+            font-weight: 500; // Définit le poids de la police à 500
+            font-size: 1.125em; // Convertit 18px en em
+            flex-grow: 1;
+            overflow: hidden;
+            /* si nécessaire, texte rogné et ... */
+            text-overflow: ellipsis;
+            /* empêche le retour à la ligne */
+            white-space: nowrap;
+        }
+
+        .txt-menu-card {
+            font-weight: 300; // Définit le poids de la police à 300
+            font-size: 0.9375em; // Convertit 15px en em
+            flex-grow: 1;
+            overflow: hidden;
+            /* si nécessaire, texte rogné et ... */
+            text-overflow: ellipsis;
+            /* empêche le retour à la ligne */
+            white-space: nowrap;
+        }
+
+        .price-menu-card {
+            font-weight: 700;
+            font-size: 0.9375em;
+            padding-right: 20px;
+            margin-top: 25px;
+        }
+    }
+
+    .check {
+        overflow: hidden;
+        flex-shrink: 0;
+        font-size: 20px;
+        background-color: #99e2d0;
+        color: white;
+        border-radius: 0px 15px 15px 0px;
+        width: 0px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: width 0.8s ease;
+        /* Transition plus lente */
+
+        .fa-circle-check {
+            transform: rotate(0deg);
+            /* Rotation initiale */
+            transition: transform 0.8s ease;
+            /* Transition plus lente */
+        }
+    }
+
+    .content-menu-card:hover .check {
+        width: 60px;
+        /* Déplace le bouton vers la gauche au survol */
+
+        .fa-circle-check {
+            transform: rotate(360deg);
+            /* Rotation complète au survol */
+        }
+    }
