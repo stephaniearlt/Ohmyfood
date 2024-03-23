@@ -444,6 +444,9 @@ body {
 
 .image-restaurant {
   width: 100%;
+  height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
 }
@@ -464,21 +467,67 @@ body {
   display: flex;
   align-items: center;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   position: relative;
 }
 
-.menu-card {
-  margin-bottom: 40px;
-}
-
-.menu-card h2 {
+.title-order {
   text-transform: uppercase;
   font-weight: 300;
   border-bottom: 3px solid #99E2D0;
   width: 40px;
   margin-bottom: 10px;
   padding-bottom: 5px;
+}
+
+/* Styles de base pour cacher tous les groupes de plats */
+.menu-card-entry,
+.menu-card-plats,
+.menu-card-desserts {
+  opacity: 0; /* Les groupes de plats sont initialement invisibles */
+  margin-bottom: 40px;
+}
+
+/* Animation pour l'apparition des entrées */
+@keyframes apparition-entrees {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Animation pour l'apparition des plats */
+@keyframes apparition-plats {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Animation pour l'apparition des desserts */
+@keyframes apparition-desserts {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Ajout des délais d'animation pour chaque groupe de plats */
+.menu-card-entry {
+  animation: apparition-entrees 3s forwards; /* L'animation des entrées dure 3 secondes */
+}
+
+.menu-card-plats {
+  animation: apparition-plats 2s forwards; /* L'animation des plats dure 2 secondes */
+  animation-delay: 1s; /* Les plats apparaissent après une pause de 1 seconde */
+}
+
+.menu-card-desserts {
+  animation: apparition-desserts 3s forwards; /* L'animation des desserts dure 3 secondes */
+  animation-delay: 2s; /* Les desserts apparaissent après une pause de 2 secondes */
 }
 
 .content-menu-card {
