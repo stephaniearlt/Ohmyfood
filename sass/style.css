@@ -23,6 +23,12 @@
 .footer-container .footer-menu li {
   margin-bottom: 10px;
 }
+.footer-container .footer-menu a {
+  color: inherit;
+}
+.footer-container .footer-menu a:hover {
+  color: #99e2d0;
+}
 .footer-container .footer-menu .footer-menu-item,
 .footer-container .footer-menu .custom-icon {
   margin-right: 10px;
@@ -35,23 +41,31 @@
 
 @media screen and (min-width: 1024px) {
   .footer-container {
-    flex-direction: row-reverse; /* Changement en affichage en ligne avec inversion */
-    align-items: center; /* Alignement vertical des éléments */
-    padding-top: 50px; /* Ajouter un padding en haut de la section */
-    padding-bottom: 10px; /* Ajouter un padding en bas de la section */
+    flex-direction: row-reverse;
+    /* Changement en affichage en ligne avec inversion */
+    align-items: center;
+    /* Alignement vertical des éléments */
+    padding-top: 50px;
+    /* Ajouter un padding en haut de la section */
+    padding-bottom: 10px;
+    /* Ajouter un padding en bas de la section */
   }
   #footer-title {
-    margin-bottom: 0; /* Supprime la marge en bas */
+    margin-bottom: 0;
+    /* Supprime la marge en bas */
   }
   .footer-menu ul {
-    display: flex; /* Affichage en ligne des éléments du menu */
+    display: flex;
+    /* Affichage en ligne des éléments du menu */
   }
   .footer-menu ul li {
-    margin-left: 15px; /* Espacement entre les éléments du menu */
+    margin-left: 15px;
+    /* Espacement entre les éléments du menu */
   }
   /* Créer un écart entre "Contact" et "Ohmyfood" */
   .footer-menu ul li:last-child {
-    margin-right: 100px; /* Ajoute un espace à droite du dernier élément */
+    margin-right: 100px;
+    /* Ajoute un espace à droite du dernier élément */
   }
 }
 .header {
