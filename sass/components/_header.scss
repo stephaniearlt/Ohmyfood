@@ -48,8 +48,8 @@
     }
 }
 
-@media screen and (min-width: $large) {
-    .header {
-        margin: 10px 0;
+@media screen and (min-width: $extra-large) {
+    .header-page-menu {
+        padding: 25px 20px;
     }
 }

@@ -49,3 +49,9 @@
     top: 0;
     right: 0.9375em;
 }
+
+@media screen and (min-width: $extra-large) {
+    .restaurant-page-heart {
+        right: 4.9375em;
+    }
+}
