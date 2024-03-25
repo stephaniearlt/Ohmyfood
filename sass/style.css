@@ -6,13 +6,13 @@
 .footer-container {
   background-color: #353535;
   color: white;
-  padding: 20px 30px 20px 30px;
+  padding: 1.25em 1.875em 1.25em 1.875em;
   display: flex;
   flex-direction: column;
   /* Affichage en colonne par défaut */
 }
 .footer-container #footer-title {
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
   font-family: "Shrikhand", cursive;
   font-size: 1.125em;
 }
@@ -21,7 +21,7 @@
   list-style: none;
 }
 .footer-container .footer-menu li {
-  margin-bottom: 10px;
+  margin-bottom: 0.625em;
 }
 .footer-container .footer-menu a {
   color: inherit;
@@ -31,11 +31,11 @@
 }
 .footer-container .footer-menu .footer-menu-item,
 .footer-container .footer-menu .custom-icon {
-  margin-right: 10px;
+  margin-right: 0.625em;
   font-size: 0.8125em;
 }
 .footer-container .footer-menu .footer-menu-item1 {
-  margin-right: 5px;
+  margin-right: 0.3125em;
   font-size: 0.8125em;
 }
 
@@ -45,9 +45,9 @@
     /* Changement en affichage en ligne avec inversion */
     align-items: center;
     /* Alignement vertical des éléments */
-    padding-top: 50px;
+    padding-top: 3.125em;
     /* Ajouter un padding en haut de la section */
-    padding-bottom: 10px;
+    padding-bottom: 0.625em;
     /* Ajouter un padding en bas de la section */
   }
   #footer-title {
@@ -59,12 +59,12 @@
     /* Affichage en ligne des éléments du menu */
   }
   .footer-menu ul li {
-    margin-left: 15px;
+    margin-left: 0.9375em;
     /* Espacement entre les éléments du menu */
   }
   /* Créer un écart entre "Contact" et "Ohmyfood" */
   .footer-menu ul li:last-child {
-    margin-right: 100px;
+    margin-right: 6.25em;
     /* Ajoute un espace à droite du dernier élément */
   }
 }
@@ -81,19 +81,19 @@
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
-  margin-bottom: 15px;
+  margin-top: 1.25em;
+  margin-bottom: 0.9375em;
 }
 
 .header-page-menu {
   display: flex;
   align-items: center;
-  padding: 15px 20px 10px 20px;
+  padding: 0.9375em 1.25em 0.625em 1.25em;
   background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .header-page-menu .header-return {
-  font-size: 16px;
+  font-size: 1em;
   color: #000;
   transition: color 0.3s;
   margin-right: auto;
@@ -111,13 +111,13 @@
 }
 
 .btn {
-  font-size: 16px;
+  font-size: 1em;
   color: white;
   border: none;
-  border-radius: 30px;
+  border-radius: 1.875em;
   width: 220px;
   height: 50px;
-  padding: 10px;
+  padding: 0.625em;
   box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.12);
   background: linear-gradient(356deg, #9356dc 0%, #ff79da 100%);
   display: block;
@@ -131,13 +131,13 @@
 }
 
 .btn-order .btn {
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
 }
 
 .heart-container {
   position: absolute;
-  bottom: 25px;
-  right: 25px;
+  bottom: 1.5625em;
+  right: 1.5625em;
 }
 
 .heart-checkbox {
@@ -182,13 +182,13 @@
 .restaurant-page-heart {
   position: absolute;
   top: 0;
-  right: 15px;
+  right: 0.9375em;
 }
 
 .section-title {
   font-size: 1.5em;
   font-weight: 700;
-  margin-bottom: 25px;
+  margin-bottom: 1.5625em;
 }
 
 .home-page .localisation {
@@ -196,15 +196,15 @@
   justify-content: center;
   align-items: center;
   background-color: #e6e6e7;
-  padding: 20px;
+  padding: 1.25em;
   width: 100%;
   position: relative;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
 }
 .home-page .localisation .fa-location-dot {
-  font-size: 16px;
+  font-size: 1em;
   color: #353535;
-  margin-left: 70px;
+  margin-left: 4.375em;
 }
 .home-page .localisation .search {
   background: none;
@@ -219,26 +219,26 @@
   background-color: #f6f6f6;
   width: 100%;
   text-align: center;
-  padding: 40px 20px 20px;
+  padding: 2.5em 1.25em 1.25em;
 }
 .home-page .exploration > div {
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
 }
 .home-page .exploration .exploration-text p {
   font-weight: 300;
   font-size: 1.125em;
 }
 .home-page .fonctionnement {
-  padding: 40px 20px;
+  padding: 2.5em 1.25em;
   background-color: white;
 }
 .home-page .fonctionnement .fonctionnement-steps .step {
   background: #f6f6f6;
   border-radius: 25px;
   height: 80px;
-  margin-bottom: 30px;
-  padding-top: 30px;
-  padding-left: 100px;
+  margin-bottom: 1.875em;
+  padding-top: 1.875em;
+  padding-left: 6.25em;
   box-shadow: 1px 4px 9px 1px rgba(0, 0, 0, 0.1);
   position: relative;
 }
@@ -259,9 +259,18 @@
   align-items: center;
 }
 .home-page .fonctionnement .fonctionnement-steps .step .step-icon {
+  color: #7E7E7E;
+  font-size: 1.5em;
+  margin-right: 1.25em;
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.home-page .fonctionnement .fonctionnement-steps .step .step-icon-1 {
   color: #9356dc;
   font-size: 1.5em;
-  margin-right: 20px;
+  margin-right: 1.25em;
   position: absolute;
   left: 40px;
   top: 50%;
@@ -270,18 +279,18 @@
 .home-page .fonctionnement .fonctionnement-steps .step .step-description {
   line-height: 1.5;
   position: relative;
-  left: -20px;
+  left: -1.25em;
 }
 .home-page .restaurants {
   background-color: #f6f6f6;
-  padding: 40px 20px 40px 20px;
+  padding: 2.5em 1.25em 2.5em 1.25em;
 }
 .home-page .card {
   position: relative;
   background-color: white;
   border-radius: 15px;
-  margin-top: 20px;
-  margin-bottom: 25px;
+  margin-top: 1.25em;
+  margin-bottom: 1.5625em;
   box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.12);
   position: relative;
   display: block;
@@ -297,11 +306,11 @@
 .home-page .card .card-new {
   background-color: rgb(153, 226, 208);
   color: rgb(0, 135, 102);
-  padding: 5px 10px;
+  padding: 0.3125em 0.625em;
   border-radius: 2px;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 0.625em;
+  right: 0.625em;
   z-index: 1;
 }
 .home-page .card .card-content {
@@ -309,7 +318,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 15px;
+  padding: 0.9375em;
 }
 .home-page .card .card-content .card-txt {
   display: flex;
@@ -318,12 +327,12 @@
 }
 .home-page .card .card-content .card-txt .title-subtitle {
   flex: 1;
-  margin-right: 10px;
+  margin-right: 0.625em;
 }
 .home-page .card .card-content .card-txt .title-subtitle .card-title {
   font-size: 1.125em;
   font-weight: 700;
-  padding-bottom: 5px;
+  padding-bottom: 0.3125em;
 }
 .home-page .card .card-content .card-txt .title-subtitle .card-subtitle {
   font-size: 1.0625em;
@@ -379,10 +388,10 @@
 @media screen and (min-width: 1024px) {
   .home-page h1 {
     font-size: 1.25em;
-    padding-bottom: 10px;
+    padding-bottom: 0.625em;
   }
   .home-page .fonctionnement {
-    padding: 40px 60px;
+    padding: 2.5em 3.75em;
   }
   .home-page .fonctionnement-steps {
     display: flex;
@@ -392,49 +401,52 @@
     /* Largeur totale pour s'adapter au centrage */
   }
   .home-page .fonctionnement-steps .step {
-    margin-left: 10px;
+    margin-left: 0.625em;
   }
   .home-page .restaurants {
-    padding: 40px 30px 40px 60px;
+    padding: 2.5em 1.875em 2.5em 3.75em;
   }
   .home-page .card {
-    margin-right: 25px;
+    margin-right: 1.5625em;
     /* Ajouter une marge à droite */
   }
   .home-page .restaurants .restaurants-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 1.25em;
   }
 }
 @media screen and (min-width: 1440px) {
   .home-page h1 {
     font-size: 1.75em;
-    padding-bottom: 25px;
+    padding-bottom: 1.5625em;
   }
   .home-page p {
-    padding-bottom: 20px;
+    padding-bottom: 1.25em;
   }
   .home-page .fonctionnement {
-    padding: 40px 200px;
+    padding: 2.5em 12.5em;
   }
   .home-page .fonctionnement-steps {
-    padding: 0 15px;
+    padding: 0 0.9375em;
   }
   .home-page .restaurants {
-    padding: 40px 120px 10px 200px;
+    padding: 2.5em 7.5em 0.625em 12.5em;
+  }
+  .home-page .card {
+    height: 225px;
   }
   .fonctionnement-steps .step {
-    padding-top: 30px;
-    padding-left: 100px;
-    padding-right: 40px;
+    padding-top: 1.875em;
+    padding-left: 6.25em;
+    padding-right: 2.5em;
   }
   .card {
-    margin-right: 75px;
+    margin-right: 4.6875em;
     /* Ajouter une marge à droite */
   }
   .footer-container {
-    padding-right: 120px;
+    padding-right: 7.5em;
     /* Ajouter une marge à droite */
   }
 }
@@ -448,12 +460,12 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
+  margin-bottom: 1.875em;
 }
 
 .menu-restaurant {
   background-color: rgb(246, 246, 246);
-  padding: 20px;
+  padding: 1.25em;
   position: relative;
   top: -75px;
   z-index: 1;
@@ -466,8 +478,8 @@ body {
   font-size: 1.75em;
   display: flex;
   align-items: center;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin-top: 1.25em;
+  margin-bottom: 1.875em;
   position: relative;
 }
 
@@ -476,15 +488,16 @@ body {
   font-weight: 300;
   border-bottom: 3px solid #99E2D0;
   width: 40px;
-  margin-bottom: 10px;
-  padding-bottom: 5px;
+  margin-bottom: 0.625em;
+  padding-bottom: 0.3125em;
 }
 
 /* Styles de base pour cacher tous les groupes de plats */
 .menu-card-entry,
 .menu-card-plats,
 .menu-card-desserts {
-  opacity: 0; /* Les groupes de plats sont initialement invisibles */
+  opacity: 0;
+  /* Les groupes de plats sont initialement invisibles */
   margin-bottom: 40px;
 }
 
@@ -517,17 +530,22 @@ body {
 }
 /* Ajout des délais d'animation pour chaque groupe de plats */
 .menu-card-entry {
-  animation: apparition-entrees 3s forwards; /* L'animation des entrées dure 3 secondes */
+  animation: apparition-entrees 4s forwards;
+  /* L'animation des entrées dure 3 secondes */
 }
 
 .menu-card-plats {
-  animation: apparition-plats 2s forwards; /* L'animation des plats dure 2 secondes */
-  animation-delay: 1s; /* Les plats apparaissent après une pause de 1 seconde */
+  animation: apparition-plats 3s forwards;
+  /* L'animation des plats dure 2 secondes */
+  animation-delay: 1s;
+  /* Les plats apparaissent après une pause de 1 seconde */
 }
 
 .menu-card-desserts {
-  animation: apparition-desserts 3s forwards; /* L'animation des desserts dure 3 secondes */
-  animation-delay: 2s; /* Les desserts apparaissent après une pause de 2 secondes */
+  animation: apparition-desserts 3s forwards;
+  /* L'animation des desserts dure 3 secondes */
+  animation-delay: 2s;
+  /* Les desserts apparaissent après une pause de 2 secondes */
 }
 
 .content-menu-card {
@@ -540,8 +558,8 @@ body {
   align-items: center;
   background-color: white;
   border-radius: 15px;
-  padding-left: 12px;
-  margin-bottom: 15px;
+  padding-left: 0.75em;
+  margin-bottom: 0.9375em;
   box-shadow: 1px 4px 9px 1px rgba(0, 0, 0, 0.1);
   transition: transform 330ms ease-in-out;
 }
@@ -578,14 +596,14 @@ body {
 .content-menu-card .price-menu-card {
   font-weight: 700;
   font-size: 0.9375em;
-  padding-right: 20px;
-  margin-top: 25px;
+  padding-right: 1.25em;
+  margin-top: 1.5625em;
 }
 
 .check {
   overflow: hidden;
   flex-shrink: 0;
-  font-size: 20px;
+  font-size: 1.25em;
   background-color: #99e2d0;
   color: white;
   border-radius: 0px 15px 15px 0px;
@@ -621,7 +639,6 @@ body {
 body {
   background-color: white;
   min-width: 320px;
-  max-width: 1440px;
   margin: 0 auto;
 }
 

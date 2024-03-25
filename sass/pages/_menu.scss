@@ -7,12 +7,12 @@ body {
     height: 275px;
     object-fit: cover;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); // Ombre légère
-    margin-bottom: 30px; // Ajoute un espace en bas pour séparer l'image du contenu suivant
+    margin-bottom: 1.875em; // Ajoute un espace en bas pour séparer l'image du contenu suivant
 }
 
 .menu-restaurant {
     background-color: rgba(246, 246, 246, 1);
-    padding: 20px;
+    padding: 1.25em;
     position: relative;
     top: -75px; // Décale légèrement vers le haut pour chevaucher l'image
     z-index: 1; // Assurez-vous que la section est au-dessus de l'image
@@ -25,8 +25,8 @@ body {
     font-size: 1.75em;
     display: flex;
     align-items: center;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-top: 1.25em;
+    margin-bottom: 1.875em;
     position: relative;
 }
 
@@ -35,15 +35,16 @@ body {
     font-weight: 300;
     border-bottom: 3px solid #99E2D0; // Ajoute la bordure en dessous du texte avec les critères spécifiés
     width: 40px; // Largeur de la bordure
-    margin-bottom: 10px; // Ajoute une marge en bas pour créer un espace sous le titre
-    padding-bottom: 5px; // Ajoute un espace supplémentaire entre le texte et la bordure
+    margin-bottom: 0.625em; // Ajoute une marge en bas pour créer un espace sous le titre
+    padding-bottom: 0.3125em; // Ajoute un espace supplémentaire entre le texte et la bordure
 }
 
 /* Styles de base pour cacher tous les groupes de plats */
 .menu-card-entry,
 .menu-card-plats,
 .menu-card-desserts {
-    opacity: 0; /* Les groupes de plats sont initialement invisibles */
+    opacity: 0;
+    /* Les groupes de plats sont initialement invisibles */
     margin-bottom: 40px;
 }
 
@@ -52,6 +53,7 @@ body {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -62,6 +64,7 @@ body {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -72,6 +75,7 @@ body {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -79,17 +83,22 @@ body {
 
 /* Ajout des délais d'animation pour chaque groupe de plats */
 .menu-card-entry {
-    animation: apparition-entrees 3s forwards; /* L'animation des entrées dure 3 secondes */
+    animation: apparition-entrees 4s forwards;
+    /* L'animation des entrées dure 3 secondes */
 }
 
 .menu-card-plats {
-    animation: apparition-plats 2s forwards; /* L'animation des plats dure 2 secondes */
-    animation-delay: 1s; /* Les plats apparaissent après une pause de 1 seconde */
+    animation: apparition-plats 3s forwards;
+    /* L'animation des plats dure 2 secondes */
+    animation-delay: 1s;
+    /* Les plats apparaissent après une pause de 1 seconde */
 }
 
 .menu-card-desserts {
-    animation: apparition-desserts 3s forwards; /* L'animation des desserts dure 3 secondes */
-    animation-delay: 2s; /* Les desserts apparaissent après une pause de 2 secondes */
+    animation: apparition-desserts 3s forwards;
+    /* L'animation des desserts dure 3 secondes */
+    animation-delay: 2s;
+    /* Les desserts apparaissent après une pause de 2 secondes */
 }
 
 .content-menu-card {
@@ -102,8 +111,8 @@ body {
     align-items: center;
     background-color: white;
     border-radius: 15px;
-    padding-left: 12px;
-    margin-bottom: 15px;
+    padding-left: 0.75em;
+    margin-bottom: 0.9375em;
     box-shadow: 1px 4px 9px 1px rgb(0 0 0 / 10%);
     transition: transform 330ms ease-in-out;
 
@@ -143,15 +152,15 @@ body {
     .price-menu-card {
         font-weight: 700;
         font-size: 0.9375em;
-        padding-right: 20px;
-        margin-top: 25px;
+        padding-right: 1.25em;
+        margin-top: 1.5625em;
     }
 }
 
 .check {
     overflow: hidden;
     flex-shrink: 0;
-    font-size: 20px;
+    font-size: 1.25em;
     background-color: #99e2d0;
     color: white;
     border-radius: 0px 15px 15px 0px;

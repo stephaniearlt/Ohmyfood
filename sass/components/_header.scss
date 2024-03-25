@@ -12,8 +12,8 @@
             display: flex;
             margin-left: auto;
             margin-right: auto;
-            margin-top: 20px;
-            margin-bottom: 15px;
+            margin-top: 1.25em;
+            margin-bottom: 0.9375em;
         }
     }
 }
@@ -22,12 +22,12 @@
     // Styles spécifiques pour l'en-tête des pages de restaurant
     display: flex;
     align-items: center; // Alignement vertical
-    padding: 15px 20px 10px 20px;
+    padding: 0.9375em 1.25em 0.625em 1.25em;
     background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
     .header-return {
-        font-size: 16px; // Taille de l'icône
+        font-size: 1em; // Taille de l'icône
         color: #000; // Couleur par défaut
         transition: color 0.3s; // Animation de transition
         margin-right: auto; // Pour aligner l'icône complètement à gauche

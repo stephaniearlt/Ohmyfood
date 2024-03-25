@@ -1,7 +1,7 @@
 .section-title {
     font-size: 1.5em;
     font-weight: 700;
-    margin-bottom: 25px;
+    margin-bottom: 1.5625em;
 }
 
 .home-page {
@@ -11,15 +11,15 @@
         justify-content: center;
         align-items: center;
         background-color: #e6e6e7;
-        padding: 20px;
+        padding: 1.25em;
         width: 100%;
         position: relative;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
 
         .fa-location-dot {
-            font-size: 16px;
+            font-size: 1em;
             color: #353535;
-            margin-left: 70px;
+            margin-left: 4.375em;
         }
 
         .search {
@@ -37,10 +37,10 @@
         background-color: #f6f6f6;
         width: 100%;
         text-align: center;
-        padding: 40px 20px 20px;
+        padding: 2.5em 1.25em 1.25em;
 
         >div {
-            margin-bottom: 20px;
+            margin-bottom: 1.25em;
         }
 
         .exploration-text p {
@@ -50,16 +50,16 @@
     }
 
     .fonctionnement {
-        padding: 40px 20px;
+        padding: 2.5em 1.25em;
         background-color: white;
 
         .fonctionnement-steps .step {
             background: #f6f6f6;
             border-radius: 25px;
             height: 80px;
-            margin-bottom: 30px;
-            padding-top: 30px;
-            padding-left: 100px;
+            margin-bottom: 1.875em;
+            padding-top: 1.875em;
+            padding-left: 6.25em;
             box-shadow: 1px 4px 9px 1px rgba(0, 0, 0, 0.1);
             position: relative;
 
@@ -81,9 +81,19 @@
             }
 
             .step-icon {
+                color: #7E7E7E;
+                font-size: 1.5em;
+                margin-right: 1.25em;
+                position: absolute;
+                left: 40px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            .step-icon-1 {
                 color: $primary-color;
                 font-size: 1.5em;
-                margin-right: 20px;
+                margin-right: 1.25em;
                 position: absolute;
                 left: 40px;
                 top: 50%;
@@ -93,22 +103,22 @@
             .step-description {
                 line-height: 1.5;
                 position: relative;
-                left: -20px;
+                left: -1.25em;
             }
         }
     }
 
     .restaurants {
         background-color: #f6f6f6;
-        padding: 40px 20px 40px 20px;
+        padding: 2.5em 1.25em 2.5em 1.25em;
     }
 
     .card {
         position: relative;
         background-color: white;
         border-radius: 15px;
-        margin-top: 20px;
-        margin-bottom: 25px;
+        margin-top: 1.25em;
+        margin-bottom: 1.5625em;
         box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.12);
         position: relative;
         display: block;
@@ -124,11 +134,11 @@
         .card-new {
             background-color: rgba(153, 226, 208, 1);
             color: rgba(0, 135, 102, 1);
-            padding: 5px 10px;
+            padding: 0.3125em 0.625em;
             border-radius: 2px;
             position: absolute;
-            top: 10px;
-            right: 10px;
+            top: 0.625em;
+            right: 0.625em;
             z-index: 1;
         }
 
@@ -137,7 +147,7 @@
             flex-direction: column;
             justify-content: space-between;
             align-items: flex-start;
-            padding: 15px;
+            padding: 0.9375em;
 
             .card-txt {
                 display: flex;
@@ -146,12 +156,12 @@
 
                 .title-subtitle {
                     flex: 1;
-                    margin-right: 10px;
+                    margin-right: 0.625em;
 
                     .card-title {
                         font-size: 1.125em;
                         font-weight: 700;
-                        padding-bottom: 5px;
+                        padding-bottom: 0.3125em;
                     }
 
                     .card-subtitle {
@@ -220,11 +230,11 @@
 
         h1 {
             font-size: 1.25em;
-            padding-bottom: 10px;
+            padding-bottom: 0.625em;
         }
 
         .fonctionnement {
-            padding: 40px 60px;
+            padding: 2.5em 3.75em;
         }
 
         .fonctionnement-steps {
@@ -236,22 +246,22 @@
         }
 
         .fonctionnement-steps .step {
-            margin-left: 10px;
+            margin-left: 0.625em;
         }
 
         .restaurants {
-            padding: 40px 30px 40px 60px;
+            padding: 2.5em 1.875em 2.5em 3.75em;
         }
 
         .card {
-            margin-right: 25px;
+            margin-right: 1.5625em;
             /* Ajouter une marge à droite */
         }
 
         .restaurants .restaurants-cards {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
+            gap: 1.25em;
         }
     }
 }
@@ -262,40 +272,44 @@
 
         h1 {
             font-size: 1.75em;
-            padding-bottom: 25px;
+            padding-bottom: 1.5625em;
         }
 
         p {
-            padding-bottom: 20px;
+            padding-bottom: 1.25em;
         }
 
         .fonctionnement {
-            padding: 40px 200px;
+            padding: 2.5em 12.5em;
         }
 
         .fonctionnement-steps {
-            padding: 0 15px;
+            padding: 0 0.9375em;
         }
 
         .restaurants {
-            padding: 40px 120px 10px 200px;
+            padding: 2.5em 7.5em 0.625em 12.5em;
+        }
+
+        .card {
+            height: 225px;
         }
     }
 
 
     .fonctionnement-steps .step {
-        padding-top: 30px;
-        padding-left: 100px;
-        padding-right: 40px;
+        padding-top: 1.875em;
+        padding-left: 6.25em;
+        padding-right: 2.5em;
     }
 
     .card {
-        margin-right: 75px;
+        margin-right: 4.6875em;
         /* Ajouter une marge à droite */
     }
 
     .footer-container {
-        padding-right: 120px;
+        padding-right: 7.5em;
         /* Ajouter une marge à droite */
     }
 }

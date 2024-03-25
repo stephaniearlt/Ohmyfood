@@ -7,7 +7,7 @@
   /* Affichage en colonne par défaut */
 
   #footer-title {
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
     font-family: $footer-title-font;
     font-size: $footer-title-font-size;
   }
@@ -19,11 +19,11 @@
     }
 
     li {
-      margin-bottom: 10px;
+      margin-bottom: 0.625em;
     }
 
     a {
-      color: inherit; 
+      color: inherit;
 
       &:hover {
         color: #99e2d0;
@@ -32,12 +32,12 @@
 
     .footer-menu-item,
     .custom-icon {
-      margin-right: 10px;
+      margin-right: 0.625em;
       font-size: $footer-menu-item-font-size;
     }
 
     .footer-menu-item1 {
-      margin-right: 5px;
+      margin-right: 0.3125em;
       font-size: $footer-menu-item-font-size;
     }
   }
@@ -49,9 +49,9 @@
     /* Changement en affichage en ligne avec inversion */
     align-items: center;
     /* Alignement vertical des éléments */
-    padding-top: 50px;
+    padding-top: 3.125em;
     /* Ajouter un padding en haut de la section */
-    padding-bottom: 10px;
+    padding-bottom: 0.625em;
     /* Ajouter un padding en bas de la section */
   }
 
@@ -67,13 +67,13 @@
   }
 
   .footer-menu ul li {
-    margin-left: 15px;
+    margin-left: 0.9375em;
     /* Espacement entre les éléments du menu */
   }
 
   /* Créer un écart entre "Contact" et "Ohmyfood" */
   .footer-menu ul li:last-child {
-    margin-right: 100px;
+    margin-right: 6.25em;
     /* Ajoute un espace à droite du dernier élément */
   }
 
