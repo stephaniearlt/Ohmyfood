@@ -43,6 +43,17 @@
   }
 }
 
+@media screen and (min-width: $medium) {
+
+  .footer-container {
+    padding: 1.25em 4.6875em;
+  }
+
+  #partner {
+    padding-right: 2.5em;
+  }
+}
+
 @media screen and (min-width: $large) {
   .footer-container {
     flex-direction: row-reverse;

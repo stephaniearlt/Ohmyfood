@@ -47,3 +47,9 @@
         display: inline-block; // Permet d'appliquer text-align: center
     }
 }
+
+@media screen and (min-width: $large) {
+    .header {
+        margin: 10px 0;
+    }
+}

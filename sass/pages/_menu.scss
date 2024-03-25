@@ -14,9 +14,9 @@ body {
     background-color: rgba(246, 246, 246, 1);
     padding: 1.25em;
     position: relative;
-    top: -75px; // Décale légèrement vers le haut pour chevaucher l'image
-    z-index: 1; // Assurez-vous que la section est au-dessus de l'image
     border-radius: 40px 40px 0 0;
+    transform: translateY(-75px); // Décale légèrement vers le haut pour chevaucher l'image
+    z-index: 1; // Assurez-vous que la section est au-dessus de l'image
     margin-bottom: -75px; // Réduire le décalage avec le footer
 }
 
@@ -187,5 +187,19 @@ body {
     .fa-circle-check {
         transform: rotate(360deg);
         /* Rotation complète au survol */
+    }
+}
+
+@media screen and (min-width: $medium) {
+    .menu-restaurant {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media screen and (min-width: $large) {
+    .menu-restaurant {
+        padding-left: 100px;
+        padding-right: 100px;
     }
 }
