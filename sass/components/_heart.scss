@@ -1,9 +1,9 @@
+// Style coeur page accueil
 .heart-container {
     position: absolute;
     bottom: 1.5625em;
     right: 1.5625em;
 }
-
 
 .heart-checkbox {
     display: none;
@@ -44,14 +44,20 @@
     -webkit-background-clip: text;
 }
 
+// Style coeur page menu
 .restaurant-page-heart {
     position: absolute;
     top: 0;
-    right: 0.9375em;
+    right: 8%;
 }
 
+// Responsive
 @media screen and (min-width: $extra-large) {
     .restaurant-page-heart {
-        right: 4.9375em;
+        position: absolute;
+        top: 10%;
+        right: 18%;
+        transform: translateY(-50%);
+        margin-right: 1em;
     }
 }

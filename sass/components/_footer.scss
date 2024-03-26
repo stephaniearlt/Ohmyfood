@@ -4,7 +4,6 @@
   padding: $footer-padding-top $footer-padding-right $footer-padding-bottom $footer-padding-left;
   display: flex;
   flex-direction: column;
-  /* Affichage en colonne par défaut */
 
   #footer-title {
     margin-bottom: 1.25em;
@@ -52,7 +51,7 @@
   #partner {
     padding-right: 2.5em;
   }
-  
+
 }
 
 @media screen and (min-width: $large) {
@@ -62,15 +61,7 @@
     align-items: center;
     /* Alignement vertical des éléments */
     padding-top: 3.125em;
-    /* Ajouter un padding en haut de la section */
     padding-bottom: 0.625em;
-    /* Ajouter un padding en bas de la section */
-  }
-
-  #footer-title {
-    margin-bottom: 0;
-    /* Supprime la marge en bas */
-
   }
 
   .footer-menu ul {
@@ -80,13 +71,10 @@
 
   .footer-menu ul li {
     margin-left: 0.9375em;
-    /* Espacement entre les éléments du menu */
   }
 
-  /* Créer un écart entre "Contact" et "Ohmyfood" */
+  /* Ecart entre "Contact" et "Ohmyfood" */
   .footer-menu ul li:last-child {
     margin-right: 6.25em;
-    /* Ajoute un espace à droite du dernier élément */
   }
-
 }
