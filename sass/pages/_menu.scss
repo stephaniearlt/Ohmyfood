@@ -72,7 +72,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
+    background-color: $background-color;
     border-radius: 15px;
     padding-left: 0.75em;
     margin-bottom: 0.9375em;
@@ -113,7 +113,7 @@ body {
     overflow: hidden;
     flex-shrink: 0;
     font-size: 1.25em;
-    background-color: #99e2d0;
+    background-color: $tertiary-color;
     color: white;
     border-radius: 0px 15px 15px 0px;
     width: 0px;
