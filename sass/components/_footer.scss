@@ -6,7 +6,7 @@
   flex-direction: column;
 
   #footer-title {
-    margin-bottom: 1.25em;
+    margin-bottom: 20px;
     font-family: $footer-title-font;
     font-size: $footer-title-font-size;
   }
@@ -18,7 +18,7 @@
     }
 
     li {
-      margin-bottom: 0.625em;
+      margin-bottom: 10px;
     }
 
     a {
@@ -31,12 +31,12 @@
 
     .footer-menu-item,
     .custom-icon {
-      margin-right: 0.625em;
+      margin-right: 10px;
       font-size: $footer-menu-item-font-size;
     }
 
     .footer-menu-item1 {
-      margin-right: 0.3125em;
+      margin-right: 5px;
       font-size: $footer-menu-item-font-size;
     }
   }
@@ -45,11 +45,11 @@
 @media screen and (min-width: $medium) {
 
   .footer-container {
-    padding: 1.25em 4.6875em;
+    padding: 20px 4.6875em;
   }
 
   #partner {
-    padding-right: 2.5em;
+    padding-right: 40px;
   }
 
 }

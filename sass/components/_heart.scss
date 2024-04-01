@@ -1,8 +1,8 @@
 // Style coeur page accueil
 .heart-container {
     position: absolute;
-    bottom: 1.5625em;
-    right: 1.5625em;
+    bottom: 25px;
+    right: 25px;
 }
 
 .heart-checkbox {
@@ -31,7 +31,6 @@
     opacity: 1;
     color: transparent;
     background-image: linear-gradient($primary-color, $secondary-color);
-    background-clip: text;
     -webkit-background-clip: text;
 }
 
@@ -39,7 +38,6 @@
     opacity: 0;
     color: transparent;
     background-image: linear-gradient($primary-color, $secondary-color);
-    background-clip: text;
     -webkit-background-clip: text;
 }
 
@@ -54,7 +52,7 @@
 @media screen and (min-width: $extra-large) {
     .restaurant-page-heart {
         position: absolute;
-        top: 6px;
+        top: 9px;
         right: 150px;
         transform: translateY(-50%);
     }

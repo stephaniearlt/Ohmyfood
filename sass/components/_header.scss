@@ -12,8 +12,8 @@
             display: flex;
             margin-left: auto;
             margin-right: auto;
-            margin-top: 1.25em;
-            margin-bottom: 0.9375em;
+            margin-top: 20px;
+            margin-bottom: 15px;
         }
     }
 }
@@ -22,7 +22,7 @@
 .header-page-menu {
     display: flex;
     align-items: center;
-    padding: 0.9375em 1.25em 0.625em 1.25em;
+    padding: 15px 20px 10px 20px;
 
     .header-return {
         font-size: 1em;

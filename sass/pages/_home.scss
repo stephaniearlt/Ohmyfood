@@ -1,8 +1,8 @@
 .section-title {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: 1.25em;
-    padding: 0 1.875em;
+    margin-bottom: 20px;
+    padding: 0 30px;
 }
 
 .home-page {
@@ -12,23 +12,23 @@
         justify-content: center;
         align-items: center;
         background-color: #e6e6e7;
-        padding: 1.25em;
+        padding: 20px;
         width: 100%;
         position: relative;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
 
         .fa-location-dot {
-            font-size: 1em;
+            font-size: 1rem;
             color: $footer-background-color;
-            margin-left: 4.375em;
-            margin-right: 0.75em;
+            margin-left: 70px;
+            margin-right: 12px;
         }
 
         .search {
             background: none;
             border: none;
             font-weight: 500;
-            font-size: 1em;
+            font-size: 1rem;
         }
     }
 
@@ -36,46 +36,46 @@
         background-color: #f6f6f6;
         width: 100%;
         text-align: center;
-        padding: 2.5em 1.25em 3.125em;
+        padding: 40px 20px 50px;
 
         >div {
-            margin-bottom: 1.25em;
+            margin-bottom: 20px;
         }
 
         .exploration-text {
             font-weight: 300;
-            font-size: 1.125em;
+            font-size: 18px;
             padding-bottom: 25px;
         }
     }
 
     .fonctionnement {
-        padding: 2.5em 1.25em;
+        padding: 40px 20px;
         background-color: $background-color;
 
         .subtitle {
-            font-size: 1.5em;
+            font-size: 1.5rem;
             font-weight: 700;
             padding-bottom: 25px;
         }
 
         .fonctionnement-steps {
-            padding-left: 0.625em;
+            padding-left: 10px;
 
             .step {
                 background: #f6f6f6;
                 border-radius: 25px;
                 height: 80px;
-                margin-bottom: 1.875em;
-                padding-top: 1.875em;
-                padding-left: 6.25em;
+                margin-bottom: 30px;
+                padding-top: 30px;
+                padding-left: 10px;
                 box-shadow: 1px 4px 9px 1px rgba(0, 0, 0, 0.1);
                 position: relative;
 
                 .step-number {
                     color: #fff;
                     font-weight: 500;
-                    font-size: 0.875em;
+                    font-size: 11px;
                     position: absolute;
                     left: -10px;
                     top: 50%;
@@ -91,20 +91,20 @@
 
                 .step-icon {
                     color: #7E7E7E;
-                    font-size: 1.5em;
-                    margin-right: 1.25em;
+                    font-size: 1.5rem;
+                    margin-right: 20px;
                     position: absolute;
-                    left: 40px;
+                    left: 30px;
                     top: 50%;
                     transform: translateY(-50%);
                 }
 
                 .step-icon-1 {
                     color: $primary-color;
-                    font-size: 1.5em;
-                    margin-right: 1.25em;
+                    font-size: 1.5rem;
+                    margin-right: 20px;
                     position: absolute;
-                    left: 40px;
+                    left: 30px;
                     top: 50%;
                     transform: translateY(-50%);
                 }
@@ -112,7 +112,9 @@
                 .step-description {
                     line-height: 1.5;
                     position: relative;
-                    left: -1.25em;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                 }
             }
         }
@@ -120,11 +122,11 @@
 
     .restaurants {
         background-color: #f6f6f6;
-        padding: 3.125em 1.25em 2.5em 1.25em;
+        padding: 50px 20px 40px 20px;
     }
 
     .subtitle {
-        font-size: 1.5em;
+        font-size: 1.5rem;
         font-weight: 700;
     }
 
@@ -132,8 +134,8 @@
         position: relative;
         background-color: white;
         border-radius: 15px;
-        margin-top: 1.25em;
-        margin-bottom: 1.5625em;
+        margin-top: 20px;
+        margin-bottom: 25px;
         box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.12);
         transition: box-shadow 1.5s ease;
         /* Transition de la boîte d'ombre pour l'effet de survol */
@@ -149,29 +151,29 @@
         .card-new {
             background-color: rgba(153, 226, 208, 1);
             color: rgba(0, 135, 102, 1);
-            padding: 0.3125em 0.625em;
+            padding: 5px 10px;
             border-radius: 2px;
             position: absolute;
-            top: 0.625em;
-            right: 0.625em;
+            top: 10px;
+            right: 10px;
             z-index: 1;
         }
 
         .card-content {
-            padding: 0.9375em;
+            padding: 15px;
 
             .card-txt .title-subtitle {
                 flex: 1;
-                margin-right: 0.625em;
+                margin-right: 10px;
 
                 .card-title {
-                    font-size: 1.125em;
+                    font-size: 18px;
                     font-weight: 700;
-                    padding-bottom: 0.3125em;
+                    padding-bottom: 5px;
                 }
 
                 .card-subtitle {
-                    font-size: 1.0625em;
+                    font-size: 1.0625rem;
                     font-weight: 300;
                 }
             }
@@ -188,11 +190,13 @@
 
 .loader-overlay {
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
     background-color: rgba(255, 255, 255, 0.8);
     z-index: 9999;
     /* Assure que le loader est au-dessus de tout le contenu */
@@ -204,7 +208,6 @@
     font-size: 120px;
     color: $primary-color;
     animation: spin 2s linear infinite;
-    /* Animation de rotation */
 }
 
 @keyframes fadeOut {
@@ -235,15 +238,15 @@
     .home-page {
 
         .fonctionnement {
-            padding: 2.5em 3.75em 2.5em 4.6875em;
+            padding: 40px 60px 40px 75px;
         }
 
         .restaurants {
-            padding: 2.5em 4.6875em;
+            padding: 40px 75px;
         }
 
         .fonctionnement-steps {
-            padding: 0 0.9375em;
+            padding: 0 15px;
         }
     }
 }
@@ -253,36 +256,34 @@
     .home-page {
 
         h1 {
-            font-size: 2.25em;
+            font-size: 2.25rem;
             margin-bottom: 30px;
         }
 
         .fonctionnement {
-            padding: 2.5em 3.75em;
+            padding: 40px 60px;
         }
 
         .fonctionnement-steps {
-            display: flex;
-            justify-content: space-between;
             width: 100%;
         }
 
         .fonctionnement-steps .step {
-            margin-left: 0.625em;
+            margin-left: 10px;
         }
 
         .restaurants {
-            padding: 2.5em 1.875em 2.5em 3.75em;
+            padding: 40px 30px 40px 60px;
         }
 
         .card {
-            margin-right: 1.5625em;
+            margin-right: 25px;
         }
 
         .restaurants .restaurants-cards {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 1.25em;
+            gap: 20px;
         }
     }
 }
@@ -291,43 +292,41 @@
 
     .home-page {
         h1 {
-            font-size: 2.5em;
+            font-size: 2.5rem;
             padding-bottom: 0;
         }
 
         p {
-            padding-bottom: 1.25em;
+            padding-bottom: 20px;
         }
 
         .fonctionnement {
-            padding: 3.75em 12.5em 1.25em;
+            padding: 60px 200px 20px;
         }
 
         .fonctionnement-steps {
-            padding: 0 0.9375em;
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+        }
+
+        .fonctionnement-steps .step {
+            width: calc(33.333% - 0px);
+            margin-right: 20px;
         }
 
         .restaurants {
-            padding: 2.5em 7.5em 0.625em 12.5em;
+            padding: 40px 120px 10px 200px;
         }
 
         .card {
             height: 275px;
             margin-right: 60px;
+            margin-right: 4.6875em;
         }
 
         .card img {
             height: 200px;
         }
-    }
-
-    .fonctionnement-steps .step {
-        padding-top: 1.875em;
-        padding-left: 6.25em;
-        padding-right: 2.5em;
-    }
-
-    .card {
-        margin-right: 4.6875em;
     }
 }
