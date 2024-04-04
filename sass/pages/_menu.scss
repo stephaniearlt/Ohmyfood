@@ -63,8 +63,9 @@ body {
     animation-delay: 2s;
 }
 
-// Content menu card
-.content-menu-card {
+// Style carte menu
+.content-menu-card .bar-menu {
+    position: relative;
     cursor: pointer;
     overflow: hidden;
     height: 70px;
@@ -78,67 +79,70 @@ body {
     margin-bottom: 15px;
     box-shadow: 1px 4px 9px 1px rgb(0 0 0 / 10%);
     transition: transform 330ms ease-in-out;
-
-    .details-menu-card,
-    .title-menu-card,
-    .txt-menu-card {
-        flex-grow: 1;
-        overflow: hidden;
-        text-overflow: ellipsis; // si nécessaire, texte rogné et ...
-        white-space: nowrap; // empêche le retour à la ligne
-    }
-
-    .details-menu-card {
-        line-height: 25px;
-        padding-right: 10px;
-    }
-
-    .title-menu-card {
-        font-weight: 500;
-        font-size: 1.125rem;
-    }
-
-    .txt-menu-card {
-        font-weight: 300;
-        font-size: 0.9375rem;
-    }
-
-    .price-menu-card {
-        font-weight: 700;
-        font-size: 0.9375rem;
-        padding-right: 20px;
-        margin-top: 25px;
-    }
 }
 
-.check {
+.hidden {
+    display: none;
+}
+
+.details-menu-card,
+.title-menu-card,
+.txt-menu-card {
+    flex-grow: 1;
     overflow: hidden;
-    flex-shrink: 0;
+    text-overflow: ellipsis; // si nécessaire, texte rogné et ...
+    white-space: nowrap; // empêche le retour à la ligne
+}
+
+.details-menu-card {
+    line-height: 25px;
+    padding-right: 10px;
+}
+
+.title-menu-card {
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+.txt-menu-card {
+    font-weight: 300;
+    font-size: 0.9375rem;
+}
+
+.price-menu-card {
+    font-weight: 700;
+    font-size: 0.9375rem;
+    padding-right: 20px;
+    margin-top: 25px;
+}
+
+/* Style de la coche */
+.bar-menu:after {
+    content: "\f058";
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
     font-size: 1.25rem;
     background-color: $tertiary-color;
-    color: white;
-    border-radius: 0px 15px 15px 0px;
-    width: 0px;
-    height: 70px;
+    width: 60px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: width 0.8s ease;
-
-    .fa-circle-check {
-        transform: rotate(0deg);
-        transition: transform 0.8s ease;
-    }
+    border-radius: 0 15px 15px 0;
+    color: white;
+    right: -5em;
+    transition: right 0.3s ease; // Ajout de la transition
 }
 
-.content-menu-card:hover .check {
-    width: 60px;
-    // Déplace le bouton vers la gauche au survol
+/* Fait apparaître l'icône uniquement lorsqu'il est coché */
+.menu-checkbox:checked+.bar-menu:after {
+    right: 0;
+}
 
-    .fa-circle-check {
-        transform: rotate(360deg);
-        // Rotation complète au survol
-    }
+/* Décalage du prix vers la gauche au clic */
+.menu-checkbox:checked+.bar-menu .price-menu-card {
+    transform: translateX(-60px);
+    transition: transform 0.3s ease;
 }
 
 @media screen and (min-width: $medium) {
