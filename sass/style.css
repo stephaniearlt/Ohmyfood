@@ -482,7 +482,7 @@ body {
 
 .menu-restaurant {
   background-color: rgb(246, 246, 246);
-  padding: 20px 20px 35px;
+  padding: 12px 12px 35px;
   position: relative;
   border-radius: 40px 40px 0 0;
   transform: translateY(-75px);
@@ -494,8 +494,8 @@ body {
   font-family: "Shrikhand", cursive;
   font-size: 28px;
   position: relative;
-  padding-bottom: 20px;
-  margin-top: 12px;
+  padding-bottom: 30px;
+  margin-top: 30px;
 }
 
 .title-order {
@@ -548,6 +548,7 @@ body {
   transition: transform 330ms ease-in-out;
 }
 
+/* Positionnement de la case à cocher à droite */
 .hidden {
   display: none;
 }
@@ -555,7 +556,6 @@ body {
 .details-menu-card,
 .title-menu-card,
 .txt-menu-card {
-  flex-grow: 1;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -563,7 +563,6 @@ body {
 
 .details-menu-card {
   line-height: 25px;
-  padding-right: 10px;
 }
 
 .title-menu-card {
@@ -579,7 +578,7 @@ body {
 .price-menu-card {
   font-weight: 700;
   font-size: 0.9375rem;
-  padding-right: 20px;
+  padding-right: 15px;
   margin-top: 25px;
 }
 
@@ -590,7 +589,7 @@ body {
   position: absolute;
   font-size: 1.25rem;
   background-color: #99e2d0;
-  width: 60px;
+  width: 59px;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -604,6 +603,15 @@ body {
 /* Fait apparaître l'icône uniquement lorsqu'il est coché */
 .menu-checkbox:checked + .bar-menu:after {
   right: 0;
+}
+
+/* Rogner texte si trop long */
+.menu-checkbox:checked ~ .bar-menu .ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: calc(100% - 120px);
+  /* Ajout espace pour la coche */
 }
 
 /* Décalage du prix vers la gauche au clic */
