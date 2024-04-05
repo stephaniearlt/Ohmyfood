@@ -531,8 +531,7 @@ body {
   animation-delay: 2s;
 }
 
-.content-menu-card .bar-menu {
-  position: relative;
+.content-menu-card {
   cursor: pointer;
   overflow: hidden;
   height: 70px;
@@ -547,69 +546,57 @@ body {
   box-shadow: 1px 4px 9px 1px rgba(0, 0, 0, 0.1);
   transition: transform 330ms ease-in-out;
 }
-
-.hidden {
-  display: none;
-}
-
-.details-menu-card,
-.title-menu-card,
-.txt-menu-card {
+.content-menu-card .details-menu-card,
+.content-menu-card .title-menu-card,
+.content-menu-card .txt-menu-card {
   flex-grow: 1;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-
-.details-menu-card {
+.content-menu-card .details-menu-card {
   line-height: 25px;
   padding-right: 10px;
 }
-
-.title-menu-card {
+.content-menu-card .title-menu-card {
   font-weight: 500;
   font-size: 1.125rem;
 }
-
-.txt-menu-card {
+.content-menu-card .txt-menu-card {
   font-weight: 300;
   font-size: 0.9375rem;
 }
-
-.price-menu-card {
+.content-menu-card .price-menu-card {
   font-weight: 700;
   font-size: 0.9375rem;
   padding-right: 20px;
   margin-top: 25px;
 }
 
-/* Style de la coche */
-.bar-menu:after {
-  content: "\f058";
-  font-family: "Font Awesome 5 Free";
-  position: absolute;
+.check {
+  overflow: hidden;
+  flex-shrink: 0;
   font-size: 1.25rem;
   background-color: #99e2d0;
-  width: 60px;
-  height: 100%;
+  color: white;
+  border-radius: 0px 15px 15px 0px;
+  width: 0px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 0 15px 15px 0;
-  color: white;
-  right: -5em;
-  transition: right 0.3s ease;
+  transition: width 0.8s ease;
+}
+.check .fa-circle-check {
+  transform: rotate(0deg);
+  transition: transform 0.8s ease;
 }
 
-/* Fait apparaître l'icône uniquement lorsqu'il est coché */
-.menu-checkbox:checked + .bar-menu:after {
-  right: 0;
+.content-menu-card:hover .check {
+  width: 60px;
 }
-
-/* Décalage du prix vers la gauche au clic */
-.menu-checkbox:checked + .bar-menu .price-menu-card {
-  transform: translateX(-60px);
-  transition: transform 0.3s ease;
+.content-menu-card:hover .check .fa-circle-check {
+  transform: rotate(360deg);
 }
 
 @media screen and (min-width: 768px) {
