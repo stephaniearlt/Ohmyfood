@@ -1,6 +1,6 @@
 @charset "UTF-8";
 :root {
-  --font-size: 1em;
+  --font-size: 1rem;
 }
 
 .footer-container {
@@ -584,6 +584,7 @@ body {
 
 /* Style de la coche */
 .bar-menu:after {
+  font: var(--fa-font-solid);
   content: "\f058";
   font-family: "Font Awesome 5 Free";
   position: absolute;
