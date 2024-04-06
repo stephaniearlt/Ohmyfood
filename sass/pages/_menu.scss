@@ -11,7 +11,7 @@ body {
 
 .menu-restaurant {
     background-color: $second-background-color;
-    padding: 20px 20px 35px;
+    padding: 12px 12px 35px;
     position: relative;
     border-radius: 40px 40px 0 0;
     transform: translateY(-75px); // Décale légèrement vers le haut pour chevaucher l'image
@@ -23,8 +23,8 @@ body {
     font-family: $heading-font;
     font-size: 28px;
     position: relative;
-    padding-bottom: 20px;
-    margin-top: 12px;
+    padding-bottom: 30px;
+    margin-top: 30px;
 }
 
 .title-order {
@@ -63,8 +63,9 @@ body {
     animation-delay: 2s;
 }
 
-// Content menu card
-.content-menu-card {
+// Style carte menu
+.content-menu-card .bar-menu {
+    position: relative;
     cursor: pointer;
     overflow: hidden;
     height: 70px;
@@ -78,67 +79,79 @@ body {
     margin-bottom: 15px;
     box-shadow: 1px 4px 9px 1px rgb(0 0 0 / 10%);
     transition: transform 330ms ease-in-out;
-
-    .details-menu-card,
-    .title-menu-card,
-    .txt-menu-card {
-        flex-grow: 1;
-        overflow: hidden;
-        text-overflow: ellipsis; // si nécessaire, texte rogné et ...
-        white-space: nowrap; // empêche le retour à la ligne
-    }
-
-    .details-menu-card {
-        line-height: 25px;
-        padding-right: 10px;
-    }
-
-    .title-menu-card {
-        font-weight: 500;
-        font-size: 1.125rem;
-    }
-
-    .txt-menu-card {
-        font-weight: 300;
-        font-size: 0.9375rem;
-    }
-
-    .price-menu-card {
-        font-weight: 700;
-        font-size: 0.9375rem;
-        padding-right: 20px;
-        margin-top: 25px;
-    }
 }
 
-.check {
+/* Positionnement de la case à cocher à droite */
+.hidden {
+    display: none;
+}
+
+.details-menu-card,
+.title-menu-card,
+.txt-menu-card {
     overflow: hidden;
-    flex-shrink: 0;
+    text-overflow: ellipsis; // si nécessaire, texte rogné et ...
+    white-space: nowrap; // empêche le retour à la ligne
+}
+
+.details-menu-card {
+    line-height: 25px;
+}
+
+.title-menu-card {
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+.txt-menu-card {
+    font-weight: 300;
+    font-size: 0.9375rem;
+}
+
+.price-menu-card {
+    font-weight: 700;
+    font-size: 0.9375rem;
+    padding-right: 15px;
+    margin-top: 25px;
+}
+
+/* Style de la coche */
+.bar-menu:after {
+    font: var(--fa-font-solid);
+    content: "\f058";
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
     font-size: 1.25rem;
     background-color: $tertiary-color;
-    color: white;
-    border-radius: 0px 15px 15px 0px;
-    width: 0px;
-    height: 70px;
+    width: 59px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: width 0.8s ease;
-
-    .fa-circle-check {
-        transform: rotate(0deg);
-        transition: transform 0.8s ease;
-    }
+    border-radius: 0 15px 15px 0;
+    color: white;
+    right: -5em;
+    transition: right 0.3s ease; // Ajout de la transition
 }
 
-.content-menu-card:hover .check {
-    width: 60px;
-    // Déplace le bouton vers la gauche au survol
+/* Fait apparaître l'icône uniquement lorsqu'il est coché */
+.menu-checkbox:checked+.bar-menu:after {
+    right: 0;
+}
 
-    .fa-circle-check {
-        transform: rotate(360deg);
-        // Rotation complète au survol
-    }
+/* Rogner texte si trop long */
+.menu-checkbox:checked~.bar-menu .ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 120px);
+    /* Ajout espace pour la coche */
+}
+
+/* Décalage du prix vers la gauche au clic */
+.menu-checkbox:checked+.bar-menu .price-menu-card {
+    transform: translateX(-60px);
+    transition: transform 0.3s ease;
 }
 
 @media screen and (min-width: $medium) {
